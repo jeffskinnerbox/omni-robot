@@ -1,0 +1,382 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: /home/jeff/omni-robot/build/turtle_gamepad_2/.pytest_cache
+rootdir: /home/jeff/omni-robot/src/turtle_gamepad_2
+plugins: ament-pep257-0.17.2, ament-lint-0.17.2, ament-copyright-0.17.2, launch-testing-3.4.5, launch-testing-ros-0.26.8, ament-flake8-0.17.2, ament-xmllint-0.17.2, cov-4.1.0, typeguard-4.1.5, colcon-core-0.19.0
+[1mcollecting ... [0m[1m
+collected 8 items                                                              [0m
+
+test/test_copyright.py [33ms[0m[32m                                                 [ 12%][0m
+test/test_emergency_stop_monitor.py [32m.[0m[32m.[0m[32m                                   [ 37%][0m
+test/test_flake8.py [31mF[0m[31m                                                    [ 50%][0m
+test/test_pep257.py [31mF[0m[31m                                                    [ 62%][0m
+test/test_turtle_gamepad_controller.py [32m.[0m[32m.[0m[32m.[0m[31m                               [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_________________________________ test_flake8 __________________________________[0m
+[1m[31mtest/test_flake8.py[0m:23: in test_flake8
+    [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1m[31mE   AssertionError: Found 50 code style errors / warnings:[0m
+[1m[31mE     ./launch/turtle_gamepad_launch.py:4:1: I201 Missing newline between import groups. 'from launch import LaunchDescription' is identified as Third Party and 'import os' is identified as Stdlib.[0m
+[1m[31mE     ./launch/turtle_gamepad_launch.py:5:1: F401 'launch.actions.IncludeLaunchDescription' imported but unused[0m
+[1m[31mE     ./launch/turtle_gamepad_launch.py:6:1: F401 'launch.conditions.IfCondition' imported but unused[0m
+[1m[31mE     ./launch/turtle_gamepad_launch.py:7:1: F401 'launch.launch_description_sources.PythonLaunchDescriptionSource' imported but unused[0m
+[1m[31mE     ./launch/turtle_gamepad_launch.py:8:1: F401 'launch.substitutions.PathJoinSubstitution' imported but unused[0m
+[1m[31mE     ./launch/turtle_gamepad_launch.py:10:1: F401 'launch_ros.substitutions.FindPackageShare' imported but unused[0m
+[1m[31mE     ./launch/turtle_gamepad_launch.py:11:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch_ros.substitutions import FindPackageShare'[0m
+[1m[31mE     ./launch/turtle_gamepad_simple_launch.py:4:1: I201 Missing newline between import groups. 'from launch import LaunchDescription' is identified as Third Party and 'import os' is identified as Stdlib.[0m
+[1m[31mE     ./launch/turtle_gamepad_simple_launch.py:5:1: F401 'launch.actions.DeclareLaunchArgument' imported but unused[0m
+[1m[31mE     ./launch/turtle_gamepad_simple_launch.py:6:1: F401 'launch.substitutions.LaunchConfiguration' imported but unused[0m
+[1m[31mE     ./launch/turtle_gamepad_simple_launch.py:8:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch_ros.actions import Node'[0m
+[1m[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import find_packages, setup' and in a different group.[0m
+[1m[31mE     ./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import find_packages, setup' is identified as Third Party.[0m
+[1m[31mE     ./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'[0m
+[1m[31mE     ./setup.py:15:100: E501 line too long (109 > 99 characters)[0m
+[1m[31mE     ./test/test_emergency_stop_monitor.py:5:1: F401 'rclpy.node.Node' imported but unused[0m
+[1m[31mE     ./test/test_emergency_stop_monitor.py:7:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from std_msgs.msg import Bool'[0m
+[1m[31mE     ./test/test_emergency_stop_monitor.py:13:1: D400 First line should end with a period[0m
+[1m[31mE     ./test/test_emergency_stop_monitor.py:13:1: D401 First line should be in imperative mood; try rephrasing[0m
+[1m[31mE     ./test/test_emergency_stop_monitor.py:18:1: D400 First line should end with a period[0m
+[1m[31mE     ./test/test_emergency_stop_monitor.py:22:1: D400 First line should end with a period[0m
+[1m[31mE     ./test/test_emergency_stop_monitor.py:26:32: E712 comparison to True should be 'if cond is True:' or 'if cond:'[0m
+[1m[31mE     ./test/test_emergency_stop_monitor.py:29:1: D400 First line should end with a period[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:5:1: F401 'rclpy.node.Node' imported but unused[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:6:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from rclpy.node import Node'[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:9:1: I100 Import statements are in the wrong order. 'import time' should be before 'from std_msgs.msg import Bool' and in a different group.[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:9:1: I201 Missing newline between import groups. 'import time' is identified as Stdlib and 'from std_msgs.msg import Bool' is identified as Third Party.[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:9:1: F401 'time' imported but unused[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:10:1: I100 Import statements are in the wrong order. 'import threading' should be before 'import time'[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:10:1: F401 'threading' imported but unused[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:16:1: D400 First line should end with a period[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:16:1: D401 First line should be in imperative mood; try rephrasing[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:21:1: D400 First line should end with a period[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:25:1: D400 First line should end with a period[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:34:1: D400 First line should end with a period[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:47:1: D400 First line should end with a period[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:51:35: E712 comparison to True should be 'if cond is True:' or 'if cond:'[0m
+[1m[31mE     ./test/test_turtle_gamepad_controller.py:54:35: E712 comparison to False should be 'if cond is False:' or 'if not cond:'[0m
+[1m[31mE     ./turtle_gamepad_2/emergency_stop_monitor.py:6:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from std_msgs.msg import Bool'[0m
+[1m[31mE     ./turtle_gamepad_2/emergency_stop_monitor.py:30:1: D400 First line should end with a period[0m
+[1m[31mE     ./turtle_gamepad_2/emergency_stop_monitor.py:39:1: D400 First line should end with a period[0m
+[1m[31mE     ./turtle_gamepad_2/emergency_stop_monitor.py:45:1: D400 First line should end with a period[0m
+[1m[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:5:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from rclpy.node import Node'[0m
+[1m[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:8:1: I100 Import statements are in the wrong order. 'import math' should be before 'from std_msgs.msg import Bool' and in a different group.[0m
+[1m[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:8:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from std_msgs.msg import Bool' is identified as Third Party.[0m
+[1m[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:8:1: F401 'math' imported but unused[0m
+[1m[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:21:100: E501 line too long (114 > 99 characters)[0m
+[1m[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:53:1: D400 First line should end with a period[0m
+[1m[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:134:1: D400 First line should end with a period[0m
+[1m[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:143:1: D400 First line should end with a period[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stdout call -----------------------------
+
+./launch/turtle_gamepad_launch.py:4:1: I201 Missing newline between import groups. 'from launch import LaunchDescription' is identified as Third Party and 'import os' is identified as Stdlib.
+from launch import LaunchDescription
+^
+
+./launch/turtle_gamepad_launch.py:5:1: F401 'launch.actions.IncludeLaunchDescription' imported but unused
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
+^
+
+./launch/turtle_gamepad_launch.py:6:1: F401 'launch.conditions.IfCondition' imported but unused
+from launch.conditions import IfCondition
+^
+
+./launch/turtle_gamepad_launch.py:7:1: F401 'launch.launch_description_sources.PythonLaunchDescriptionSource' imported but unused
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+^
+
+./launch/turtle_gamepad_launch.py:8:1: F401 'launch.substitutions.PathJoinSubstitution' imported but unused
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
+^
+
+./launch/turtle_gamepad_launch.py:10:1: F401 'launch_ros.substitutions.FindPackageShare' imported but unused
+from launch_ros.substitutions import FindPackageShare
+^
+
+./launch/turtle_gamepad_launch.py:11:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch_ros.substitutions import FindPackageShare'
+from ament_index_python.packages import get_package_share_directory
+^
+
+./launch/turtle_gamepad_simple_launch.py:4:1: I201 Missing newline between import groups. 'from launch import LaunchDescription' is identified as Third Party and 'import os' is identified as Stdlib.
+from launch import LaunchDescription
+^
+
+./launch/turtle_gamepad_simple_launch.py:5:1: F401 'launch.actions.DeclareLaunchArgument' imported but unused
+from launch.actions import DeclareLaunchArgument
+^
+
+./launch/turtle_gamepad_simple_launch.py:6:1: F401 'launch.substitutions.LaunchConfiguration' imported but unused
+from launch.substitutions import LaunchConfiguration
+^
+
+./launch/turtle_gamepad_simple_launch.py:8:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch_ros.actions import Node'
+from ament_index_python.packages import get_package_share_directory
+^
+
+./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import find_packages, setup' and in a different group.
+import os
+^
+
+./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import find_packages, setup' is identified as Third Party.
+import os
+^
+
+./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+from glob import glob
+^
+
+./setup.py:15:100: E501 line too long (109 > 99 characters)
+        (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*'))),
+                                                                                                   ^
+
+./test/test_emergency_stop_monitor.py:5:1: F401 'rclpy.node.Node' imported but unused
+from rclpy.node import Node
+^
+
+./test/test_emergency_stop_monitor.py:7:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from std_msgs.msg import Bool'
+from geometry_msgs.msg import Twist
+^
+
+./test/test_emergency_stop_monitor.py:13:1: D400 First line should end with a period
+        """Setup test environment"""
+^
+
+./test/test_emergency_stop_monitor.py:13:1: D401 First line should be in imperative mood; try rephrasing
+        """Setup test environment"""
+^
+
+./test/test_emergency_stop_monitor.py:18:1: D400 First line should end with a period
+        """Cleanup test environment"""
+^
+
+./test/test_emergency_stop_monitor.py:22:1: D400 First line should end with a period
+        """Test emergency stop status handling"""
+^
+
+./test/test_emergency_stop_monitor.py:26:32: E712 comparison to True should be 'if cond is True:' or 'if cond:'
+        assert status_msg.data == True
+                               ^
+
+./test/test_emergency_stop_monitor.py:29:1: D400 First line should end with a period
+        """Test zero velocity command creation"""
+^
+
+./test/test_turtle_gamepad_controller.py:5:1: F401 'rclpy.node.Node' imported but unused
+from rclpy.node import Node
+^
+
+./test/test_turtle_gamepad_controller.py:6:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from rclpy.node import Node'
+from geometry_msgs.msg import Twist
+^
+
+./test/test_turtle_gamepad_controller.py:9:1: I100 Import statements are in the wrong order. 'import time' should be before 'from std_msgs.msg import Bool' and in a different group.
+import time
+^
+
+./test/test_turtle_gamepad_controller.py:9:1: I201 Missing newline between import groups. 'import time' is identified as Stdlib and 'from std_msgs.msg import Bool' is identified as Third Party.
+import time
+^
+
+./test/test_turtle_gamepad_controller.py:9:1: F401 'time' imported but unused
+import time
+^
+
+./test/test_turtle_gamepad_controller.py:10:1: I100 Import statements are in the wrong order. 'import threading' should be before 'import time'
+import threading
+^
+
+./test/test_turtle_gamepad_controller.py:10:1: F401 'threading' imported but unused
+import threading
+^
+
+./test/test_turtle_gamepad_controller.py:16:1: D400 First line should end with a period
+        """Setup test environment"""
+^
+
+./test/test_turtle_gamepad_controller.py:16:1: D401 First line should be in imperative mood; try rephrasing
+        """Setup test environment"""
+^
+
+./test/test_turtle_gamepad_controller.py:21:1: D400 First line should end with a period
+        """Cleanup test environment"""
+^
+
+./test/test_turtle_gamepad_controller.py:25:1: D400 First line should end with a period
+        """Test joy message format"""
+^
+
+./test/test_turtle_gamepad_controller.py:34:1: D400 First line should end with a period
+        """Test twist message creation"""
+^
+
+./test/test_turtle_gamepad_controller.py:47:1: D400 First line should end with a period
+        """Test emergency stop message"""
+^
+
+./test/test_turtle_gamepad_controller.py:51:35: E712 comparison to True should be 'if cond is True:' or 'if cond:'
+        assert emergency_msg.data == True
+                                  ^
+
+./test/test_turtle_gamepad_controller.py:54:35: E712 comparison to False should be 'if cond is False:' or 'if not cond:'
+        assert emergency_msg.data == False
+                                  ^
+
+./turtle_gamepad_2/emergency_stop_monitor.py:6:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from std_msgs.msg import Bool'
+from geometry_msgs.msg import Twist
+^
+
+./turtle_gamepad_2/emergency_stop_monitor.py:30:1: D400 First line should end with a period
+        """Monitor emergency stop status"""
+^
+
+./turtle_gamepad_2/emergency_stop_monitor.py:39:1: D400 First line should end with a period
+        """Continuously enforce emergency stop by sending zero velocity"""
+^
+
+./turtle_gamepad_2/emergency_stop_monitor.py:45:1: D400 First line should end with a period
+        """Trigger emergency stop externally"""
+^
+
+./turtle_gamepad_2/turtle_gamepad_controller.py:5:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from rclpy.node import Node'
+from geometry_msgs.msg import Twist
+^
+
+./turtle_gamepad_2/turtle_gamepad_controller.py:8:1: I100 Import statements are in the wrong order. 'import math' should be before 'from std_msgs.msg import Bool' and in a different group.
+import math
+^
+
+./turtle_gamepad_2/turtle_gamepad_controller.py:8:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from std_msgs.msg import Bool' is identified as Third Party.
+import math
+^
+
+./turtle_gamepad_2/turtle_gamepad_controller.py:8:1: F401 'math' imported but unused
+import math
+^
+
+./turtle_gamepad_2/turtle_gamepad_controller.py:21:100: E501 line too long (114 > 99 characters)
+        self.emergency_subscriber = self.create_subscription(Bool, '/emergency_stop', self.emergency_callback, 10)
+                                                                                                   ^
+
+./turtle_gamepad_2/turtle_gamepad_controller.py:53:1: D400 First line should end with a period
+        """Handle joystick input"""
+^
+
+./turtle_gamepad_2/turtle_gamepad_controller.py:134:1: D400 First line should end with a period
+        """Handle external emergency stop commands"""
+^
+
+./turtle_gamepad_2/turtle_gamepad_controller.py:143:1: D400 First line should end with a period
+        """Publish emergency stop status"""
+^
+
+15    D400 First line should end with a period
+2     D401 First line should be in imperative mood; try rephrasing
+2     E501 line too long (109 > 99 characters)
+3     E712 comparison to True should be 'if cond is True:' or 'if cond:'
+12    F401 'launch.actions.IncludeLaunchDescription' imported but unused
+11    I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch_ros.substitutions import FindPackageShare'
+5     I201 Missing newline between import groups. 'from launch import LaunchDescription' is identified as Third Party and 'import os' is identified as Stdlib.
+
+11 files checked
+50 errors
+
+'D'-type errors: 17
+'E'-type errors: 5
+'F'-type errors: 12
+'I'-type errors: 16
+
+Checked files:
+
+* ./setup.py
+* ./launch/turtle_gamepad_launch.py
+* ./launch/turtle_gamepad_simple_launch.py
+* ./turtle_gamepad_2/__init__.py
+* ./turtle_gamepad_2/emergency_stop_monitor.py
+* ./turtle_gamepad_2/turtle_gamepad_controller.py
+* ./test/test_pep257.py
+* ./test/test_emergency_stop_monitor.py
+* ./test/test_turtle_gamepad_controller.py
+* ./test/test_copyright.py
+* ./test/test_flake8.py
+[31m[1m_________________________________ test_pep257 __________________________________[0m
+[1m[31mtest/test_pep257.py[0m:23: in test_pep257
+    [94massert[39;49;00m rc == [94m0[39;49;00m, [33m'[39;49;00m[33mFound code style errors / warnings[39;49;00m[33m'[39;49;00m[90m[39;49;00m
+[1m[31mE   AssertionError: Found code style errors / warnings[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stdout call -----------------------------
+checking ./launch/turtle_gamepad_launch.py
+checking ./launch/turtle_gamepad_simple_launch.py
+checking ./setup.py
+checking ./test/test_copyright.py
+checking ./test/test_emergency_stop_monitor.py
+checking ./test/test_flake8.py
+checking ./test/test_pep257.py
+checking ./test/test_turtle_gamepad_controller.py
+checking ./turtle_gamepad_2/__init__.py
+checking ./turtle_gamepad_2/emergency_stop_monitor.py
+checking ./turtle_gamepad_2/turtle_gamepad_controller.py
+checking test/test_copyright.py
+checking test/test_emergency_stop_monitor.py
+checking test/test_flake8.py
+checking test/test_pep257.py
+checking test/test_turtle_gamepad_controller.py
+----------------------------- Captured stderr call -----------------------------
+./test/test_emergency_stop_monitor.py:13 in public method `setup_class`: D400: First line should end with a period (not 't')
+./test/test_emergency_stop_monitor.py:13 in public method `setup_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')
+./test/test_emergency_stop_monitor.py:13 in public method `setup_class`: D401: First line should be in imperative mood; try rephrasing (found 'Setup')
+./test/test_emergency_stop_monitor.py:18 in public method `teardown_class`: D400: First line should end with a period (not 't')
+./test/test_emergency_stop_monitor.py:18 in public method `teardown_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')
+./test/test_emergency_stop_monitor.py:22 in public method `test_emergency_stop_status`: D400: First line should end with a period (not 'g')
+./test/test_emergency_stop_monitor.py:22 in public method `test_emergency_stop_status`: D415: First line should end with a period, question mark, or exclamation point (not 'g')
+./test/test_emergency_stop_monitor.py:29 in public method `test_zero_velocity_command`: D400: First line should end with a period (not 'n')
+./test/test_emergency_stop_monitor.py:29 in public method `test_zero_velocity_command`: D415: First line should end with a period, question mark, or exclamation point (not 'n')
+./test/test_turtle_gamepad_controller.py:16 in public method `setup_class`: D400: First line should end with a period (not 't')
+./test/test_turtle_gamepad_controller.py:16 in public method `setup_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')
+./test/test_turtle_gamepad_controller.py:16 in public method `setup_class`: D401: First line should be in imperative mood; try rephrasing (found 'Setup')
+./test/test_turtle_gamepad_controller.py:21 in public method `teardown_class`: D400: First line should end with a period (not 't')
+./test/test_turtle_gamepad_controller.py:21 in public method `teardown_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')
+./test/test_turtle_gamepad_controller.py:25 in public method `test_joy_message_format`: D400: First line should end with a period (not 't')
+./test/test_turtle_gamepad_controller.py:25 in public method `test_joy_message_format`: D415: First line should end with a period, question mark, or exclamation point (not 't')
+./test/test_turtle_gamepad_controller.py:34 in public method `test_twist_message_creation`: D400: First line should end with a period (not 'n')
+./test/test_turtle_gamepad_controller.py:34 in public method `test_twist_message_creation`: D415: First line should end with a period, question mark, or exclamation point (not 'n')
+./test/test_turtle_gamepad_controller.py:47 in public method `test_emergency_stop_message`: D400: First line should end with a period (not 'e')
+./test/test_turtle_gamepad_controller.py:47 in public method `test_emergency_stop_message`: D415: First line should end with a period, question mark, or exclamation point (not 'e')
+./turtle_gamepad_2/emergency_stop_monitor.py:30 in public method `status_callback`: D400: First line should end with a period (not 's')
+./turtle_gamepad_2/emergency_stop_monitor.py:30 in public method `status_callback`: D415: First line should end with a period, question mark, or exclamation point (not 's')
+./turtle_gamepad_2/emergency_stop_monitor.py:39 in public method `enforce_emergency_stop`: D400: First line should end with a period (not 'y')
+./turtle_gamepad_2/emergency_stop_monitor.py:39 in public method `enforce_emergency_stop`: D415: First line should end with a period, question mark, or exclamation point (not 'y')
+./turtle_gamepad_2/emergency_stop_monitor.py:45 in public method `trigger_emergency_stop`: D400: First line should end with a period (not 'y')
+./turtle_gamepad_2/emergency_stop_monitor.py:45 in public method `trigger_emergency_stop`: D415: First line should end with a period, question mark, or exclamation point (not 'y')
+./turtle_gamepad_2/turtle_gamepad_controller.py:53 in public method `joy_callback`: D400: First line should end with a period (not 't')
+./turtle_gamepad_2/turtle_gamepad_controller.py:53 in public method `joy_callback`: D415: First line should end with a period, question mark, or exclamation point (not 't')
+./turtle_gamepad_2/turtle_gamepad_controller.py:134 in public method `emergency_callback`: D400: First line should end with a period (not 's')
+./turtle_gamepad_2/turtle_gamepad_controller.py:134 in public method `emergency_callback`: D415: First line should end with a period, question mark, or exclamation point (not 's')
+./turtle_gamepad_2/turtle_gamepad_controller.py:143 in public method `publish_status`: D400: First line should end with a period (not 's')
+./turtle_gamepad_2/turtle_gamepad_controller.py:143 in public method `publish_status`: D415: First line should end with a period, question mark, or exclamation point (not 's')
+test/test_emergency_stop_monitor.py:13 in public method `setup_class`: D400: First line should end with a period (not 't')
+test/test_emergency_stop_monitor.py:13 in public method `setup_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')
+test/test_emergency_stop_monitor.py:13 in public method `setup_class`: D401: First line should be in imperative mood; try rephrasing (found 'Setup')
+test/test_emergency_stop_monitor.py:18 in public method `teardown_class`: D400: First line should end with a period (not 't')
+test/test_emergency_stop_monitor.py:18 in public method `teardown_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')
+test/test_emergency_stop_monitor.py:22 in public method `test_emergency_stop_status`: D400: First line should end with a period (not 'g')
+test/test_emergency_stop_monitor.py:22 in public method `test_emergency_stop_status`: D415: First line should end with a period, question mark, or exclamation point (not 'g')
+test/test_emergency_stop_monitor.py:29 in public method `test_zero_velocity_command`: D400: First line should end with a period (not 'n')
+test/test_emergency_stop_monitor.py:29 in public method `test_zero_velocity_command`: D415: First line should end with a period, question mark, or exclamation point (not 'n')
+test/test_turtle_gamepad_controller.py:16 in public method `setup_class`: D400: First line should end with a period (not 't')
+test/test_turtle_gamepad_controller.py:16 in public method `setup_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')
+test/test_turtle_gamepad_controller.py:16 in public method `setup_class`: D401: First line should be in imperative mood; try rephrasing (found 'Setup')
+test/test_turtle_gamepad_controller.py:21 in public method `teardown_class`: D400: First line should end with a period (not 't')
+test/test_turtle_gamepad_controller.py:21 in public method `teardown_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')
+test/test_turtle_gamepad_controller.py:25 in public method `test_joy_message_format`: D400: First line should end with a period (not 't')
+test/test_turtle_gamepad_controller.py:25 in public method `test_joy_message_format`: D415: First line should end with a period, question mark, or exclamation point (not 't')
+test/test_turtle_gamepad_controller.py:34 in public method `test_twist_message_creation`: D400: First line should end with a period (not 'n')
+test/test_turtle_gamepad_controller.py:34 in public method `test_twist_message_creation`: D415: First line should end with a period, question mark, or exclamation point (not 'n')
+test/test_turtle_gamepad_controller.py:47 in public method `test_emergency_stop_message`: D400: First line should end with a period (not 'e')
+test/test_turtle_gamepad_controller.py:47 in public method `test_emergency_stop_message`: D415: First line should end with a period, question mark, or exclamation point (not 'e')
+52 errors
+- generated xml file: /home/jeff/omni-robot/build/turtle_gamepad_2/pytest.xml --
+[36m[1m=========================== short test summary info ============================[0m
+[31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 50 code style errors / warnings:
+[31mFAILED[0m test/test_pep257.py::[1mtest_pep257[0m - AssertionError: Found code style errors / warnings
+[31m============= [31m[1m2 failed[0m, [32m5 passed[0m, [33m1 skipped[0m, [33m12 warnings[0m[31m in 0.53s[0m[31m ==============[0m

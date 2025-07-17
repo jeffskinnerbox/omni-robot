@@ -1,0 +1,52 @@
+# Logitech F310 Gamepad Configuration for XInput mode on Linux
+# This configuration maps all F310 inputs for turtle control
+
+gamepad_config:
+  # Movement controls
+  linear_axis: 1      # Left stick Y-axis (forward/backward)
+  angular_axis: 0     # Left stick X-axis (left/right turn)
+  
+  # Speed control
+  turbo_button: 5     # Right bumper (RB) - increase speed
+  slow_button: 4      # Left bumper (LB) - decrease speed
+  
+  # Emergency controls
+  emergency_stop_button: 6  # Back button - emergency stop
+  reset_button: 7           # Start button - reset turtle position
+  
+  # Alternative movement (right stick)
+  alt_linear_axis: 4   # Right stick Y-axis
+  alt_angular_axis: 3  # Right stick X-axis
+  
+  # Speed scaling factors
+  max_linear_speed: 2.0   # Maximum linear velocity
+  max_angular_speed: 2.0  # Maximum angular velocity
+  speed_increment: 0.1    # Speed adjustment increment
+  
+  # Deadzone settings
+  deadzone_threshold: 0.1  # Ignore small stick movements
+  
+  # Button mappings (for reference)
+  button_map:
+    A: 0          # A button
+    B: 1          # B button  
+    X: 2          # X button
+    Y: 3          # Y button
+    LB: 4         # Left bumper
+    RB: 5         # Right bumper
+    BACK: 6       # Back/Select button
+    START: 7      # Start button
+    GUIDE: 8      # Xbox/Guide button
+    LS: 9         # Left stick click
+    RS: 10        # Right stick click
+    
+  # Axis mappings (for reference)
+  axis_map:
+    LS_X: 0       # Left stick X-axis
+    LS_Y: 1       # Left stick Y-axis
+    LT: 2         # Left trigger
+    RS_X: 3       # Right stick X-axis
+    RS_Y: 4       # Right stick Y-axis
+    RT: 5         # Right trigger
+    DPAD_X: 6     # D-pad X-axis
+    DPAD_Y: 7     # D-pad Y-axis

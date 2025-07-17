@@ -1,0 +1,3 @@
+[console_scripts]
+emergency_stop_monitor = turtle_gamepad_2.emergency_stop_monitor:main
+turtle_gamepad_controller = turtle_gamepad_2.turtle_gamepad_controller:main

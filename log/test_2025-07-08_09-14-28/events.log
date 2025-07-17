@@ -1,0 +1,407 @@
+[0.000000] (-) TimerEvent: {}
+[0.000783] (turtle_gamepad_2) JobQueued: {'identifier': 'turtle_gamepad_2', 'dependencies': OrderedDict({'turtle_gamepad_2': '/home/jeff/omni-robot/install/turtle_gamepad_2'})}
+[0.000939] (turtle_gamepad_2) JobStarted: {'identifier': 'turtle_gamepad_2'}
+[0.099820] (-) TimerEvent: {}
+[0.200167] (-) TimerEvent: {}
+[0.263620] (turtle_gamepad_2) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/jeff/omni-robot/src/turtle_gamepad_2', 'env': {'__EGL_VENDOR_LIBRARY_DIRS': '/snap/alacritty/149/etc/glvnd/egl_vendor.d:/snap/alacritty/149/usr/share/glvnd/egl_vendor.d', 'SNAP_INSTANCE_KEY': '', 'USER': 'jeff', 'SNAP_COMMON': '/var/snap/alacritty/common', 'SSH_CLIENT': '192.168.1.200 59012 22', 'FONTCONFIG_PATH': '/snap/alacritty/149/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'LIBVA_DRIVERS_PATH': '/snap/alacritty/149/usr/lib/x86_64-linux-gnu/dri', 'GIO_MODULE_DIR': '/home/jeff/snap/alacritty/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'tty', 'XDG_TEMPLATES_DIR': '/home/jeff/Templates', 'SNAP_UID': '1000', 'XDG_CACHE_HOME': '/home/jeff/.cache', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/snap/alacritty/149/usr/lib/x86_64-linux-gnu/dri', 'HOME': '/home/jeff', 'XLOCALEDIR': '/snap/alacritty/149/usr/share/X11/locale', 'SNAP_LIBRARY_PATH': '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void', 'OLDPWD': '/home/jeff', 'SNAP_USER_DATA': '/home/jeff/snap/alacritty/149', 'NVM_BIN': '/home/jeff/.nvm/versions/node/v22.15.0/bin', 'SSH_TTY': '/dev/pts/0', 'NVM_INC': '/home/jeff/.nvm/versions/node/v22.15.0/include/node', 'XDG_DOCUMENTS_DIR': '/home/jeff/Documents', 'ROS_PYTHON_VERSION': '3', 'OPENSCADPATH': '/home/jeff/cad/openscad_libs', 'ARDMK_DIR': '/home/jeff/src/arduino-makefile', 'PAGER': 'less', 'XDG_VIDEOS_DIR': '/home/jeff/Videos', 'VISUAL': 'vim', 'XDG_STATE_HOME': '/home/jeff/.local/state', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'SNAP_REVISION': '149', 'COLORTERM': 'truecolor', 'XDG_DESKTOP_DIR': '/home/jeff/Desktop', 'MID_PATH': '/home/jeff/.pyenv/bin:/usr/bin:/usr/sbin:/usr/local/bin', 'NVM_DIR': '/home/jeff/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'GST_PLUGIN_SCANNER': '/snap/alacritty/149/usr/lib/x86_64-linux-gnu/gstreamer1.0/gstreamer-1.0/gst-plugin-scanner', 'COLCON_PREFIX_PATH': '/home/jeff/omni-robot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jeff', 'XDG_MUSIC_DIR': '/home/jeff/Music', 'ALACRITTY_SOCKET': '/run/user/1000/Alacritty-localhost:10.0-69948.sock', 'XKB_CONFIG_ROOT': '/snap/alacritty/149/usr/share/X11/xkb', 'WINDOWID': '69206019', 'ANSIBLE_CONFIG': '/home/jeff/.ansible.cfg', 'ARDUINO_DIR': '/home/jeff/src/arduino-Nov-5-2018', 'SNAP_CONTEXT': 'wPkJuCC3ND_JCtJHoMtCA6AweQT-23oCkWsidNPjAIxt7C0w4aJp', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'SNAP_VERSION': '0.15.0', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '382', 'ALACRITTY_LOG': '/tmp/Alacritty-69948.log', 'XDG_PICTURES_DIR': '/home/jeff/Pictures', 'XDG_PUBLICSHARE_DIR': '/home/jeff/Public', 'SNAP_INSTANCE_NAME': 'alacritty', 'AVR_TOOLS_DIR': '/home/jeff/src/arduino-Nov-5-2018/hardware/tools/avr', 'VDPAU_DRIVER_PATH': '/usr/lib/x86_64-linux-gnu/vdpau/', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/jeff/.nvm/versions/node/v22.15.0/bin:/home/jeff/bin:/home/jeff/.local/bin:/snap/bin:/usr/bin:/usr/sbin:/usr/local/bin:/bin:/sbin', 'SNAP_DATA': '/var/snap/alacritty/149', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GST_PLUGIN_SYSTEM_PATH': '/snap/alacritty/149/usr/lib/x86_64-linux-gnu/gstreamer-1.0', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'XDG_DATA_HOME': '/home/jeff/.local/share', 'XDG_CONFIG_HOME': '/home/jeff/.config', 'MANPAGER': 'less', 'SNAP_USER_COMMON': '/home/jeff/snap/alacritty/common', 'SNAP_ARCH': 'amd64', 'AMENT_PREFIX_PATH': '/home/jeff/omni-robot/install/turtle_gamepad_2:/opt/ros/jazzy', 'SNAP_COOKIE': 'wPkJuCC3ND_JCtJHoMtCA6AweQT-23oCkWsidNPjAIxt7C0w4aJp', 'SHELL': '/bin/bash', 'GDK_PIXBUF_MODULEDIR': '/snap/alacritty/149/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders', 'GST_PLUGIN_PATH': '/snap/alacritty/149/usr/lib/x86_64-linux-gnu/gstreamer-1.0', 'SNAP_REEXEC': '', 'SNAP_NAME': 'alacritty', 'FONTCONFIG_FILE': '/snap/alacritty/149/etc/fonts/fonts.conf', 'XCURSOR_PATH': '/snap/alacritty/149/usr/share/icons', 'GDK_PIXBUF_MODULE_FILE': '/home/jeff/snap/alacritty/common/.cache/gdk-pixbuf-loaders.cache', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'SNAP_LAUNCHER_ARCH_TRIPLET': 'x86_64-linux-gnu', 'ALACRITTY_WINDOW_ID': '69206019', 'PWD': '/home/jeff/omni-robot/build/turtle_gamepad_2', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg', 'SNAP_REAL_HOME': '/home/jeff', 'SSH_CONNECTION': '192.168.1.200 59012 192.168.1.154 22', 'NVM_CD_FLAGS': '', 'PYENV_ROOT': '/home/jeff/.pyenv', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/', 'SNAP_EUID': '1000', 'XDG_DOWNLOAD_DIR': '/home/jeff/Downloads', 'PYTHONPATH': '/home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/jeff/.local/bin', 'SNAP': '/snap/alacritty/149', 'COLCON': '1', 'TERMINAL': 'alacritty-ros', 'EDITOR': 'vim', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'LIBGL_DRIVERS_PATH': '/snap/alacritty/149/usr/lib/x86_64-linux-gnu/dri', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/jeff/omni-robot/build/turtle_gamepad_2/pytest.xml --junit-prefix=turtle_gamepad_2 -o cache_dir=/home/jeff/omni-robot/build/turtle_gamepad_2/.pytest_cache'}, 'shell': False}
+[0.300254] (-) TimerEvent: {}
+[0.400564] (-) TimerEvent: {}
+[0.500860] (-) TimerEvent: {}
+[0.601176] (-) TimerEvent: {}
+[0.647794] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.648323] (turtle_gamepad_2) StdoutLine: {'line': b'platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0\n'}
+[0.651922] (turtle_gamepad_2) StdoutLine: {'line': b'cachedir: /home/jeff/omni-robot/build/turtle_gamepad_2/.pytest_cache\n'}
+[0.652170] (turtle_gamepad_2) StdoutLine: {'line': b'rootdir: /home/jeff/omni-robot/src/turtle_gamepad_2\n'}
+[0.652348] (turtle_gamepad_2) StdoutLine: {'line': b'plugins: ament-pep257-0.17.2, ament-lint-0.17.2, ament-copyright-0.17.2, launch-testing-3.4.5, launch-testing-ros-0.26.8, ament-flake8-0.17.2, ament-xmllint-0.17.2, cov-4.1.0, typeguard-4.1.5, colcon-core-0.19.0\n'}
+[0.701261] (-) TimerEvent: {}
+[0.801533] (-) TimerEvent: {}
+[0.901781] (-) TimerEvent: {}
+[0.954279] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[0.954504] (turtle_gamepad_2) StdoutLine: {'line': b'collected 8 items                                                              \x1b[0m\n'}
+[0.954701] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[0.959212] (turtle_gamepad_2) StdoutLine: {'line': b'test/test_copyright.py \x1b[33ms\x1b[0m\x1b[32m                                                 [ 12%]\x1b[0m\n'}
+[0.964389] (turtle_gamepad_2) StdoutLine: {'line': b'test/test_emergency_stop_monitor.py \x1b[32m.\x1b[0m\x1b[32m.\x1b[0m\x1b[32m                                   [ 37%]\x1b[0m\n'}
+[1.001847] (-) TimerEvent: {}
+[1.102077] (-) TimerEvent: {}
+[1.120019] (turtle_gamepad_2) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 50%]\x1b[0m\n'}
+[1.148242] (turtle_gamepad_2) StdoutLine: {'line': b'test/test_pep257.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 62%]\x1b[0m\n'}
+[1.151271] (turtle_gamepad_2) StdoutLine: {'line': b'test/test_turtle_gamepad_controller.py \x1b[32m.\x1b[0m\x1b[32m.\x1b[0m\x1b[32m.\x1b[0m\x1b[31m                               [100%]\x1b[0m\n'}
+[1.151444] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.151611] (turtle_gamepad_2) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[1.151728] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[1.151834] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[1.176037] (turtle_gamepad_2) StdoutLine: {'line': b'    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \\\n'}
+[1.176447] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found 50 code style errors / warnings:\x1b[0m\n'}
+[1.176601] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/turtle_gamepad_launch.py:4:1: I201 Missing newline between import groups. 'from launch import LaunchDescription' is identified as Third Party and 'import os' is identified as Stdlib.\x1b[0m\n"}
+[1.176747] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/turtle_gamepad_launch.py:5:1: F401 'launch.actions.IncludeLaunchDescription' imported but unused\x1b[0m\n"}
+[1.176886] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/turtle_gamepad_launch.py:6:1: F401 'launch.conditions.IfCondition' imported but unused\x1b[0m\n"}
+[1.177033] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/turtle_gamepad_launch.py:7:1: F401 'launch.launch_description_sources.PythonLaunchDescriptionSource' imported but unused\x1b[0m\n"}
+[1.177189] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/turtle_gamepad_launch.py:8:1: F401 'launch.substitutions.PathJoinSubstitution' imported but unused\x1b[0m\n"}
+[1.177329] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/turtle_gamepad_launch.py:10:1: F401 'launch_ros.substitutions.FindPackageShare' imported but unused\x1b[0m\n"}
+[1.177445] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/turtle_gamepad_launch.py:11:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch_ros.substitutions import FindPackageShare'\x1b[0m\n"}
+[1.177515] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/turtle_gamepad_simple_launch.py:4:1: I201 Missing newline between import groups. 'from launch import LaunchDescription' is identified as Third Party and 'import os' is identified as Stdlib.\x1b[0m\n"}
+[1.177576] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/turtle_gamepad_simple_launch.py:5:1: F401 'launch.actions.DeclareLaunchArgument' imported but unused\x1b[0m\n"}
+[1.177636] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/turtle_gamepad_simple_launch.py:6:1: F401 'launch.substitutions.LaunchConfiguration' imported but unused\x1b[0m\n"}
+[1.177697] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/turtle_gamepad_simple_launch.py:8:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch_ros.actions import Node'\x1b[0m\n"}
+[1.177760] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import find_packages, setup' and in a different group.\x1b[0m\n"}
+[1.177853] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import find_packages, setup' is identified as Third Party.\x1b[0m\n"}
+[1.177919] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'\x1b[0m\n"}
+[1.177973] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./setup.py:15:100: E501 line too long (109 > 99 characters)\x1b[0m\n'}
+[1.178322] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/test_emergency_stop_monitor.py:5:1: F401 'rclpy.node.Node' imported but unused\x1b[0m\n"}
+[1.178376] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/test_emergency_stop_monitor.py:7:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from std_msgs.msg import Bool'\x1b[0m\n"}
+[1.178553] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/test_emergency_stop_monitor.py:13:1: D400 First line should end with a period\x1b[0m\n'}
+[1.178604] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/test_emergency_stop_monitor.py:13:1: D401 First line should be in imperative mood; try rephrasing\x1b[0m\n'}
+[1.178653] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/test_emergency_stop_monitor.py:18:1: D400 First line should end with a period\x1b[0m\n'}
+[1.178699] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/test_emergency_stop_monitor.py:22:1: D400 First line should end with a period\x1b[0m\n'}
+[1.178745] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/test_emergency_stop_monitor.py:26:32: E712 comparison to True should be 'if cond is True:' or 'if cond:'\x1b[0m\n"}
+[1.178791] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/test_emergency_stop_monitor.py:29:1: D400 First line should end with a period\x1b[0m\n'}
+[1.178837] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:5:1: F401 'rclpy.node.Node' imported but unused\x1b[0m\n"}
+[1.178883] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:6:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from rclpy.node import Node'\x1b[0m\n"}
+[1.178928] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:9:1: I100 Import statements are in the wrong order. 'import time' should be before 'from std_msgs.msg import Bool' and in a different group.\x1b[0m\n"}
+[1.178973] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:9:1: I201 Missing newline between import groups. 'import time' is identified as Stdlib and 'from std_msgs.msg import Bool' is identified as Third Party.\x1b[0m\n"}
+[1.179018] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:9:1: F401 'time' imported but unused\x1b[0m\n"}
+[1.179075] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:10:1: I100 Import statements are in the wrong order. 'import threading' should be before 'import time'\x1b[0m\n"}
+[1.179122] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:10:1: F401 'threading' imported but unused\x1b[0m\n"}
+[1.179166] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:16:1: D400 First line should end with a period\x1b[0m\n'}
+[1.179210] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:16:1: D401 First line should be in imperative mood; try rephrasing\x1b[0m\n'}
+[1.179254] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:21:1: D400 First line should end with a period\x1b[0m\n'}
+[1.179298] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:25:1: D400 First line should end with a period\x1b[0m\n'}
+[1.179341] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:34:1: D400 First line should end with a period\x1b[0m\n'}
+[1.179385] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:47:1: D400 First line should end with a period\x1b[0m\n'}
+[1.179435] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:51:35: E712 comparison to True should be 'if cond is True:' or 'if cond:'\x1b[0m\n"}
+[1.179479] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/test_turtle_gamepad_controller.py:54:35: E712 comparison to False should be 'if cond is False:' or 'if not cond:'\x1b[0m\n"}
+[1.179523] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./turtle_gamepad_2/emergency_stop_monitor.py:6:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from std_msgs.msg import Bool'\x1b[0m\n"}
+[1.179567] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./turtle_gamepad_2/emergency_stop_monitor.py:30:1: D400 First line should end with a period\x1b[0m\n'}
+[1.179611] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./turtle_gamepad_2/emergency_stop_monitor.py:39:1: D400 First line should end with a period\x1b[0m\n'}
+[1.179658] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./turtle_gamepad_2/emergency_stop_monitor.py:45:1: D400 First line should end with a period\x1b[0m\n'}
+[1.179701] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:5:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from rclpy.node import Node'\x1b[0m\n"}
+[1.179746] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:8:1: I100 Import statements are in the wrong order. 'import math' should be before 'from std_msgs.msg import Bool' and in a different group.\x1b[0m\n"}
+[1.179789] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:8:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from std_msgs.msg import Bool' is identified as Third Party.\x1b[0m\n"}
+[1.179833] (turtle_gamepad_2) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:8:1: F401 'math' imported but unused\x1b[0m\n"}
+[1.179876] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:21:100: E501 line too long (114 > 99 characters)\x1b[0m\n'}
+[1.179926] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:53:1: D400 First line should end with a period\x1b[0m\n'}
+[1.179970] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:134:1: D400 First line should end with a period\x1b[0m\n'}
+[1.180014] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./turtle_gamepad_2/turtle_gamepad_controller.py:143:1: D400 First line should end with a period\x1b[0m\n'}
+[1.180071] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[1.180117] (turtle_gamepad_2) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[1.180161] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.180206] (turtle_gamepad_2) StdoutLine: {'line': b"./launch/turtle_gamepad_launch.py:4:1: I201 Missing newline between import groups. 'from launch import LaunchDescription' is identified as Third Party and 'import os' is identified as Stdlib.\n"}
+[1.180250] (turtle_gamepad_2) StdoutLine: {'line': b'from launch import LaunchDescription\n'}
+[1.180293] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.180337] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.180380] (turtle_gamepad_2) StdoutLine: {'line': b"./launch/turtle_gamepad_launch.py:5:1: F401 'launch.actions.IncludeLaunchDescription' imported but unused\n"}
+[1.180424] (turtle_gamepad_2) StdoutLine: {'line': b'from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription\n'}
+[1.180467] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.180515] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.180558] (turtle_gamepad_2) StdoutLine: {'line': b"./launch/turtle_gamepad_launch.py:6:1: F401 'launch.conditions.IfCondition' imported but unused\n"}
+[1.180601] (turtle_gamepad_2) StdoutLine: {'line': b'from launch.conditions import IfCondition\n'}
+[1.180644] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.180686] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.180728] (turtle_gamepad_2) StdoutLine: {'line': b"./launch/turtle_gamepad_launch.py:7:1: F401 'launch.launch_description_sources.PythonLaunchDescriptionSource' imported but unused\n"}
+[1.180772] (turtle_gamepad_2) StdoutLine: {'line': b'from launch.launch_description_sources import PythonLaunchDescriptionSource\n'}
+[1.180815] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.180857] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.180899] (turtle_gamepad_2) StdoutLine: {'line': b"./launch/turtle_gamepad_launch.py:8:1: F401 'launch.substitutions.PathJoinSubstitution' imported but unused\n"}
+[1.180941] (turtle_gamepad_2) StdoutLine: {'line': b'from launch.substitutions import LaunchConfiguration, PathJoinSubstitution\n'}
+[1.180984] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.181027] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.181082] (turtle_gamepad_2) StdoutLine: {'line': b"./launch/turtle_gamepad_launch.py:10:1: F401 'launch_ros.substitutions.FindPackageShare' imported but unused\n"}
+[1.181128] (turtle_gamepad_2) StdoutLine: {'line': b'from launch_ros.substitutions import FindPackageShare\n'}
+[1.181171] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.181213] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.181256] (turtle_gamepad_2) StdoutLine: {'line': b"./launch/turtle_gamepad_launch.py:11:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch_ros.substitutions import FindPackageShare'\n"}
+[1.181299] (turtle_gamepad_2) StdoutLine: {'line': b'from ament_index_python.packages import get_package_share_directory\n'}
+[1.181341] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.181383] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.181424] (turtle_gamepad_2) StdoutLine: {'line': b"./launch/turtle_gamepad_simple_launch.py:4:1: I201 Missing newline between import groups. 'from launch import LaunchDescription' is identified as Third Party and 'import os' is identified as Stdlib.\n"}
+[1.181467] (turtle_gamepad_2) StdoutLine: {'line': b'from launch import LaunchDescription\n'}
+[1.181509] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.181551] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.181593] (turtle_gamepad_2) StdoutLine: {'line': b"./launch/turtle_gamepad_simple_launch.py:5:1: F401 'launch.actions.DeclareLaunchArgument' imported but unused\n"}
+[1.181636] (turtle_gamepad_2) StdoutLine: {'line': b'from launch.actions import DeclareLaunchArgument\n'}
+[1.181679] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.181721] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.181764] (turtle_gamepad_2) StdoutLine: {'line': b"./launch/turtle_gamepad_simple_launch.py:6:1: F401 'launch.substitutions.LaunchConfiguration' imported but unused\n"}
+[1.181807] (turtle_gamepad_2) StdoutLine: {'line': b'from launch.substitutions import LaunchConfiguration\n'}
+[1.181849] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.181892] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.181933] (turtle_gamepad_2) StdoutLine: {'line': b"./launch/turtle_gamepad_simple_launch.py:8:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch_ros.actions import Node'\n"}
+[1.181980] (turtle_gamepad_2) StdoutLine: {'line': b'from ament_index_python.packages import get_package_share_directory\n'}
+[1.182025] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.182082] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.182126] (turtle_gamepad_2) StdoutLine: {'line': b"./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import find_packages, setup' and in a different group.\n"}
+[1.182175] (turtle_gamepad_2) StdoutLine: {'line': b'import os\n'}
+[1.182219] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.182261] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.182304] (turtle_gamepad_2) StdoutLine: {'line': b"./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import find_packages, setup' is identified as Third Party.\n"}
+[1.182347] (turtle_gamepad_2) StdoutLine: {'line': b'import os\n'}
+[1.182389] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.182431] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.182472] (turtle_gamepad_2) StdoutLine: {'line': b"./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'\n"}
+[1.182515] (turtle_gamepad_2) StdoutLine: {'line': b'from glob import glob\n'}
+[1.182557] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.182600] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.182643] (turtle_gamepad_2) StdoutLine: {'line': b'./setup.py:15:100: E501 line too long (109 > 99 characters)\n'}
+[1.182686] (turtle_gamepad_2) StdoutLine: {'line': b"        (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*'))),\n"}
+[1.182730] (turtle_gamepad_2) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.182773] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.182814] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_emergency_stop_monitor.py:5:1: F401 'rclpy.node.Node' imported but unused\n"}
+[1.182856] (turtle_gamepad_2) StdoutLine: {'line': b'from rclpy.node import Node\n'}
+[1.182898] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.182940] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.182982] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_emergency_stop_monitor.py:7:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from std_msgs.msg import Bool'\n"}
+[1.183026] (turtle_gamepad_2) StdoutLine: {'line': b'from geometry_msgs.msg import Twist\n'}
+[1.183080] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.183125] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.183168] (turtle_gamepad_2) StdoutLine: {'line': b'./test/test_emergency_stop_monitor.py:13:1: D400 First line should end with a period\n'}
+[1.183210] (turtle_gamepad_2) StdoutLine: {'line': b'        """Setup test environment"""\n'}
+[1.183251] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.183293] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.183334] (turtle_gamepad_2) StdoutLine: {'line': b'./test/test_emergency_stop_monitor.py:13:1: D401 First line should be in imperative mood; try rephrasing\n'}
+[1.183386] (turtle_gamepad_2) StdoutLine: {'line': b'        """Setup test environment"""\n'}
+[1.183431] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.183474] (turtle_gamepad_2) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[1.183537] (turtle_gamepad_2) StderrLine: {'line': b'test/test_flake8.py: 12 warnings\n'}
+[1.183583] (turtle_gamepad_2) StderrLine: {'line': b'  Warning: This process (pid=70357) is multi-threaded, use of fork() may lead to deadlocks in the child.\n'}
+[1.183627] (turtle_gamepad_2) StderrLine: {'line': b'\n'}
+[1.183668] (turtle_gamepad_2) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n'}
+[1.183711] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.183754] (turtle_gamepad_2) StdoutLine: {'line': b'./test/test_emergency_stop_monitor.py:18:1: D400 First line should end with a period\n'}
+[1.183798] (turtle_gamepad_2) StdoutLine: {'line': b'        """Cleanup test environment"""\n'}
+[1.183841] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.183883] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.183925] (turtle_gamepad_2) StdoutLine: {'line': b'./test/test_emergency_stop_monitor.py:22:1: D400 First line should end with a period\n'}
+[1.183972] (turtle_gamepad_2) StdoutLine: {'line': b'        """Test emergency stop status handling"""\n'}
+[1.184014] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.184069] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.184115] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_emergency_stop_monitor.py:26:32: E712 comparison to True should be 'if cond is True:' or 'if cond:'\n"}
+[1.184159] (turtle_gamepad_2) StdoutLine: {'line': b'        assert status_msg.data == True\n'}
+[1.184201] (turtle_gamepad_2) StdoutLine: {'line': b'                               ^\n'}
+[1.184243] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.184285] (turtle_gamepad_2) StdoutLine: {'line': b'./test/test_emergency_stop_monitor.py:29:1: D400 First line should end with a period\n'}
+[1.184328] (turtle_gamepad_2) StdoutLine: {'line': b'        """Test zero velocity command creation"""\n'}
+[1.184371] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.184413] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.184456] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:5:1: F401 'rclpy.node.Node' imported but unused\n"}
+[1.184499] (turtle_gamepad_2) StdoutLine: {'line': b'from rclpy.node import Node\n'}
+[1.184541] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.184582] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.184625] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:6:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from rclpy.node import Node'\n"}
+[1.184668] (turtle_gamepad_2) StdoutLine: {'line': b'from geometry_msgs.msg import Twist\n'}
+[1.184711] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.184753] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.184794] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:9:1: I100 Import statements are in the wrong order. 'import time' should be before 'from std_msgs.msg import Bool' and in a different group.\n"}
+[1.184837] (turtle_gamepad_2) StdoutLine: {'line': b'import time\n'}
+[1.184880] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.184922] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.184964] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:9:1: I201 Missing newline between import groups. 'import time' is identified as Stdlib and 'from std_msgs.msg import Bool' is identified as Third Party.\n"}
+[1.185007] (turtle_gamepad_2) StdoutLine: {'line': b'import time\n'}
+[1.185061] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.185108] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.185150] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:9:1: F401 'time' imported but unused\n"}
+[1.185193] (turtle_gamepad_2) StdoutLine: {'line': b'import time\n'}
+[1.185235] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.185278] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.185321] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:10:1: I100 Import statements are in the wrong order. 'import threading' should be before 'import time'\n"}
+[1.185364] (turtle_gamepad_2) StdoutLine: {'line': b'import threading\n'}
+[1.185406] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.185449] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.185491] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:10:1: F401 'threading' imported but unused\n"}
+[1.185538] (turtle_gamepad_2) StdoutLine: {'line': b'import threading\n'}
+[1.185581] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.185623] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.185665] (turtle_gamepad_2) StdoutLine: {'line': b'./test/test_turtle_gamepad_controller.py:16:1: D400 First line should end with a period\n'}
+[1.185707] (turtle_gamepad_2) StdoutLine: {'line': b'        """Setup test environment"""\n'}
+[1.185749] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.185797] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.185840] (turtle_gamepad_2) StdoutLine: {'line': b'./test/test_turtle_gamepad_controller.py:16:1: D401 First line should be in imperative mood; try rephrasing\n'}
+[1.185883] (turtle_gamepad_2) StdoutLine: {'line': b'        """Setup test environment"""\n'}
+[1.185925] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.185967] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.186008] (turtle_gamepad_2) StdoutLine: {'line': b'./test/test_turtle_gamepad_controller.py:21:1: D400 First line should end with a period\n'}
+[1.186061] (turtle_gamepad_2) StdoutLine: {'line': b'        """Cleanup test environment"""\n'}
+[1.186107] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.186150] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.186192] (turtle_gamepad_2) StdoutLine: {'line': b'./test/test_turtle_gamepad_controller.py:25:1: D400 First line should end with a period\n'}
+[1.186233] (turtle_gamepad_2) StdoutLine: {'line': b'        """Test joy message format"""\n'}
+[1.186275] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.186316] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.186358] (turtle_gamepad_2) StdoutLine: {'line': b'./test/test_turtle_gamepad_controller.py:34:1: D400 First line should end with a period\n'}
+[1.186400] (turtle_gamepad_2) StdoutLine: {'line': b'        """Test twist message creation"""\n'}
+[1.186442] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.186483] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.186525] (turtle_gamepad_2) StdoutLine: {'line': b'./test/test_turtle_gamepad_controller.py:47:1: D400 First line should end with a period\n'}
+[1.186569] (turtle_gamepad_2) StdoutLine: {'line': b'        """Test emergency stop message"""\n'}
+[1.186610] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.186651] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.186692] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:51:35: E712 comparison to True should be 'if cond is True:' or 'if cond:'\n"}
+[1.186735] (turtle_gamepad_2) StdoutLine: {'line': b'        assert emergency_msg.data == True\n'}
+[1.186776] (turtle_gamepad_2) StdoutLine: {'line': b'                                  ^\n'}
+[1.186818] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.186858] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:54:35: E712 comparison to False should be 'if cond is False:' or 'if not cond:'\n"}
+[1.186900] (turtle_gamepad_2) StdoutLine: {'line': b'        assert emergency_msg.data == False\n'}
+[1.186942] (turtle_gamepad_2) StdoutLine: {'line': b'                                  ^\n'}
+[1.186984] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.187036] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/emergency_stop_monitor.py:6:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from std_msgs.msg import Bool'\n"}
+[1.187089] (turtle_gamepad_2) StdoutLine: {'line': b'from geometry_msgs.msg import Twist\n'}
+[1.187132] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.187175] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.187218] (turtle_gamepad_2) StdoutLine: {'line': b'./turtle_gamepad_2/emergency_stop_monitor.py:30:1: D400 First line should end with a period\n'}
+[1.187261] (turtle_gamepad_2) StdoutLine: {'line': b'        """Monitor emergency stop status"""\n'}
+[1.187325] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.187372] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.187415] (turtle_gamepad_2) StdoutLine: {'line': b'./turtle_gamepad_2/emergency_stop_monitor.py:39:1: D400 First line should end with a period\n'}
+[1.187458] (turtle_gamepad_2) StdoutLine: {'line': b'        """Continuously enforce emergency stop by sending zero velocity"""\n'}
+[1.187501] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.187543] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.187585] (turtle_gamepad_2) StdoutLine: {'line': b'./turtle_gamepad_2/emergency_stop_monitor.py:45:1: D400 First line should end with a period\n'}
+[1.187628] (turtle_gamepad_2) StdoutLine: {'line': b'        """Trigger emergency stop externally"""\n'}
+[1.187676] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.187718] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.187760] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/turtle_gamepad_controller.py:5:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from rclpy.node import Node'\n"}
+[1.187810] (turtle_gamepad_2) StdoutLine: {'line': b'from geometry_msgs.msg import Twist\n'}
+[1.187854] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.187895] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.187937] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/turtle_gamepad_controller.py:8:1: I100 Import statements are in the wrong order. 'import math' should be before 'from std_msgs.msg import Bool' and in a different group.\n"}
+[1.187981] (turtle_gamepad_2) StdoutLine: {'line': b'import math\n'}
+[1.188024] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.188080] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.188125] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/turtle_gamepad_controller.py:8:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from std_msgs.msg import Bool' is identified as Third Party.\n"}
+[1.188175] (turtle_gamepad_2) StdoutLine: {'line': b'import math\n'}
+[1.188218] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.188260] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.188302] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/turtle_gamepad_controller.py:8:1: F401 'math' imported but unused\n"}
+[1.188344] (turtle_gamepad_2) StdoutLine: {'line': b'import math\n'}
+[1.188385] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.188426] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.188468] (turtle_gamepad_2) StdoutLine: {'line': b'./turtle_gamepad_2/turtle_gamepad_controller.py:21:100: E501 line too long (114 > 99 characters)\n'}
+[1.188510] (turtle_gamepad_2) StdoutLine: {'line': b"        self.emergency_subscriber = self.create_subscription(Bool, '/emergency_stop', self.emergency_callback, 10)\n"}
+[1.188552] (turtle_gamepad_2) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.188595] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.188637] (turtle_gamepad_2) StdoutLine: {'line': b'./turtle_gamepad_2/turtle_gamepad_controller.py:53:1: D400 First line should end with a period\n'}
+[1.188679] (turtle_gamepad_2) StdoutLine: {'line': b'        """Handle joystick input"""\n'}
+[1.188721] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.188763] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.188804] (turtle_gamepad_2) StdoutLine: {'line': b'./turtle_gamepad_2/turtle_gamepad_controller.py:134:1: D400 First line should end with a period\n'}
+[1.188846] (turtle_gamepad_2) StdoutLine: {'line': b'        """Handle external emergency stop commands"""\n'}
+[1.188887] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.188928] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.188970] (turtle_gamepad_2) StdoutLine: {'line': b'./turtle_gamepad_2/turtle_gamepad_controller.py:143:1: D400 First line should end with a period\n'}
+[1.189015] (turtle_gamepad_2) StdoutLine: {'line': b'        """Publish emergency stop status"""\n'}
+[1.189069] (turtle_gamepad_2) StdoutLine: {'line': b'^\n'}
+[1.189114] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.189156] (turtle_gamepad_2) StdoutLine: {'line': b'15    D400 First line should end with a period\n'}
+[1.189197] (turtle_gamepad_2) StdoutLine: {'line': b'2     D401 First line should be in imperative mood; try rephrasing\n'}
+[1.189241] (turtle_gamepad_2) StdoutLine: {'line': b'2     E501 line too long (109 > 99 characters)\n'}
+[1.189283] (turtle_gamepad_2) StdoutLine: {'line': b"3     E712 comparison to True should be 'if cond is True:' or 'if cond:'\n"}
+[1.189326] (turtle_gamepad_2) StdoutLine: {'line': b"12    F401 'launch.actions.IncludeLaunchDescription' imported but unused\n"}
+[1.189375] (turtle_gamepad_2) StdoutLine: {'line': b"11    I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch_ros.substitutions import FindPackageShare'\n"}
+[1.189418] (turtle_gamepad_2) StdoutLine: {'line': b"5     I201 Missing newline between import groups. 'from launch import LaunchDescription' is identified as Third Party and 'import os' is identified as Stdlib.\n"}
+[1.189461] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.189503] (turtle_gamepad_2) StdoutLine: {'line': b'11 files checked\n'}
+[1.189544] (turtle_gamepad_2) StdoutLine: {'line': b'50 errors\n'}
+[1.189586] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.189627] (turtle_gamepad_2) StdoutLine: {'line': b"'D'-type errors: 17\n"}
+[1.189669] (turtle_gamepad_2) StdoutLine: {'line': b"'E'-type errors: 5\n"}
+[1.189710] (turtle_gamepad_2) StdoutLine: {'line': b"'F'-type errors: 12\n"}
+[1.189751] (turtle_gamepad_2) StdoutLine: {'line': b"'I'-type errors: 16\n"}
+[1.189792] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.189834] (turtle_gamepad_2) StdoutLine: {'line': b'Checked files:\n'}
+[1.189875] (turtle_gamepad_2) StdoutLine: {'line': b'\n'}
+[1.189917] (turtle_gamepad_2) StdoutLine: {'line': b'* ./setup.py\n'}
+[1.189958] (turtle_gamepad_2) StdoutLine: {'line': b'* ./launch/turtle_gamepad_launch.py\n'}
+[1.190001] (turtle_gamepad_2) StdoutLine: {'line': b'* ./launch/turtle_gamepad_simple_launch.py\n'}
+[1.190050] (turtle_gamepad_2) StdoutLine: {'line': b'* ./turtle_gamepad_2/__init__.py\n'}
+[1.190099] (turtle_gamepad_2) StdoutLine: {'line': b'* ./turtle_gamepad_2/emergency_stop_monitor.py\n'}
+[1.190143] (turtle_gamepad_2) StdoutLine: {'line': b'* ./turtle_gamepad_2/turtle_gamepad_controller.py\n'}
+[1.190184] (turtle_gamepad_2) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[1.190227] (turtle_gamepad_2) StdoutLine: {'line': b'* ./test/test_emergency_stop_monitor.py\n'}
+[1.190268] (turtle_gamepad_2) StdoutLine: {'line': b'* ./test/test_turtle_gamepad_controller.py\n'}
+[1.190308] (turtle_gamepad_2) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[1.190351] (turtle_gamepad_2) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[1.190393] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_pep257 __________________________________\x1b[0m\n'}
+[1.190435] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_pep257.py\x1b[0m:23: in test_pep257\n'}
+[1.190477] (turtle_gamepad_2) StdoutLine: {'line': b"    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \x1b[33m'\x1b[39;49;00m\x1b[33mFound code style errors / warnings\x1b[39;49;00m\x1b[33m'\x1b[39;49;00m\x1b[90m\x1b[39;49;00m\n"}
+[1.190519] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found code style errors / warnings\x1b[0m\n'}
+[1.190561] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[1.190603] (turtle_gamepad_2) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[1.190645] (turtle_gamepad_2) StdoutLine: {'line': b'checking ./launch/turtle_gamepad_launch.py\n'}
+[1.190687] (turtle_gamepad_2) StdoutLine: {'line': b'checking ./launch/turtle_gamepad_simple_launch.py\n'}
+[1.190730] (turtle_gamepad_2) StdoutLine: {'line': b'checking ./setup.py\n'}
+[1.190772] (turtle_gamepad_2) StdoutLine: {'line': b'checking ./test/test_copyright.py\n'}
+[1.190815] (turtle_gamepad_2) StdoutLine: {'line': b'checking ./test/test_emergency_stop_monitor.py\n'}
+[1.190858] (turtle_gamepad_2) StdoutLine: {'line': b'checking ./test/test_flake8.py\n'}
+[1.190900] (turtle_gamepad_2) StdoutLine: {'line': b'checking ./test/test_pep257.py\n'}
+[1.190943] (turtle_gamepad_2) StdoutLine: {'line': b'checking ./test/test_turtle_gamepad_controller.py\n'}
+[1.190986] (turtle_gamepad_2) StdoutLine: {'line': b'checking ./turtle_gamepad_2/__init__.py\n'}
+[1.191029] (turtle_gamepad_2) StdoutLine: {'line': b'checking ./turtle_gamepad_2/emergency_stop_monitor.py\n'}
+[1.191090] (turtle_gamepad_2) StdoutLine: {'line': b'checking ./turtle_gamepad_2/turtle_gamepad_controller.py\n'}
+[1.191135] (turtle_gamepad_2) StdoutLine: {'line': b'checking test/test_copyright.py\n'}
+[1.191178] (turtle_gamepad_2) StdoutLine: {'line': b'checking test/test_emergency_stop_monitor.py\n'}
+[1.191222] (turtle_gamepad_2) StdoutLine: {'line': b'checking test/test_flake8.py\n'}
+[1.191266] (turtle_gamepad_2) StdoutLine: {'line': b'checking test/test_pep257.py\n'}
+[1.191308] (turtle_gamepad_2) StdoutLine: {'line': b'checking test/test_turtle_gamepad_controller.py\n'}
+[1.191352] (turtle_gamepad_2) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[1.191395] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_emergency_stop_monitor.py:13 in public method `setup_class`: D400: First line should end with a period (not 't')\n"}
+[1.191438] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_emergency_stop_monitor.py:13 in public method `setup_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')\n"}
+[1.191481] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_emergency_stop_monitor.py:13 in public method `setup_class`: D401: First line should be in imperative mood; try rephrasing (found 'Setup')\n"}
+[1.191530] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_emergency_stop_monitor.py:18 in public method `teardown_class`: D400: First line should end with a period (not 't')\n"}
+[1.191574] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_emergency_stop_monitor.py:18 in public method `teardown_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')\n"}
+[1.191621] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_emergency_stop_monitor.py:22 in public method `test_emergency_stop_status`: D400: First line should end with a period (not 'g')\n"}
+[1.191665] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_emergency_stop_monitor.py:22 in public method `test_emergency_stop_status`: D415: First line should end with a period, question mark, or exclamation point (not 'g')\n"}
+[1.191710] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_emergency_stop_monitor.py:29 in public method `test_zero_velocity_command`: D400: First line should end with a period (not 'n')\n"}
+[1.191757] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_emergency_stop_monitor.py:29 in public method `test_zero_velocity_command`: D415: First line should end with a period, question mark, or exclamation point (not 'n')\n"}
+[1.191803] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:16 in public method `setup_class`: D400: First line should end with a period (not 't')\n"}
+[1.191847] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:16 in public method `setup_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')\n"}
+[1.191890] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:16 in public method `setup_class`: D401: First line should be in imperative mood; try rephrasing (found 'Setup')\n"}
+[1.191933] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:21 in public method `teardown_class`: D400: First line should end with a period (not 't')\n"}
+[1.191976] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:21 in public method `teardown_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')\n"}
+[1.192019] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:25 in public method `test_joy_message_format`: D400: First line should end with a period (not 't')\n"}
+[1.192075] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:25 in public method `test_joy_message_format`: D415: First line should end with a period, question mark, or exclamation point (not 't')\n"}
+[1.192122] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:34 in public method `test_twist_message_creation`: D400: First line should end with a period (not 'n')\n"}
+[1.192171] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:34 in public method `test_twist_message_creation`: D415: First line should end with a period, question mark, or exclamation point (not 'n')\n"}
+[1.192215] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:47 in public method `test_emergency_stop_message`: D400: First line should end with a period (not 'e')\n"}
+[1.192258] (turtle_gamepad_2) StdoutLine: {'line': b"./test/test_turtle_gamepad_controller.py:47 in public method `test_emergency_stop_message`: D415: First line should end with a period, question mark, or exclamation point (not 'e')\n"}
+[1.192303] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/emergency_stop_monitor.py:30 in public method `status_callback`: D400: First line should end with a period (not 's')\n"}
+[1.192345] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/emergency_stop_monitor.py:30 in public method `status_callback`: D415: First line should end with a period, question mark, or exclamation point (not 's')\n"}
+[1.192389] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/emergency_stop_monitor.py:39 in public method `enforce_emergency_stop`: D400: First line should end with a period (not 'y')\n"}
+[1.192432] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/emergency_stop_monitor.py:39 in public method `enforce_emergency_stop`: D415: First line should end with a period, question mark, or exclamation point (not 'y')\n"}
+[1.192476] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/emergency_stop_monitor.py:45 in public method `trigger_emergency_stop`: D400: First line should end with a period (not 'y')\n"}
+[1.192519] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/emergency_stop_monitor.py:45 in public method `trigger_emergency_stop`: D415: First line should end with a period, question mark, or exclamation point (not 'y')\n"}
+[1.192563] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/turtle_gamepad_controller.py:53 in public method `joy_callback`: D400: First line should end with a period (not 't')\n"}
+[1.192606] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/turtle_gamepad_controller.py:53 in public method `joy_callback`: D415: First line should end with a period, question mark, or exclamation point (not 't')\n"}
+[1.192648] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/turtle_gamepad_controller.py:134 in public method `emergency_callback`: D400: First line should end with a period (not 's')\n"}
+[1.192702] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/turtle_gamepad_controller.py:134 in public method `emergency_callback`: D415: First line should end with a period, question mark, or exclamation point (not 's')\n"}
+[1.192746] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/turtle_gamepad_controller.py:143 in public method `publish_status`: D400: First line should end with a period (not 's')\n"}
+[1.192793] (turtle_gamepad_2) StdoutLine: {'line': b"./turtle_gamepad_2/turtle_gamepad_controller.py:143 in public method `publish_status`: D415: First line should end with a period, question mark, or exclamation point (not 's')\n"}
+[1.192841] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_emergency_stop_monitor.py:13 in public method `setup_class`: D400: First line should end with a period (not 't')\n"}
+[1.192885] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_emergency_stop_monitor.py:13 in public method `setup_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')\n"}
+[1.192929] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_emergency_stop_monitor.py:13 in public method `setup_class`: D401: First line should be in imperative mood; try rephrasing (found 'Setup')\n"}
+[1.192972] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_emergency_stop_monitor.py:18 in public method `teardown_class`: D400: First line should end with a period (not 't')\n"}
+[1.193020] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_emergency_stop_monitor.py:18 in public method `teardown_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')\n"}
+[1.193078] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_emergency_stop_monitor.py:22 in public method `test_emergency_stop_status`: D400: First line should end with a period (not 'g')\n"}
+[1.193122] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_emergency_stop_monitor.py:22 in public method `test_emergency_stop_status`: D415: First line should end with a period, question mark, or exclamation point (not 'g')\n"}
+[1.193166] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_emergency_stop_monitor.py:29 in public method `test_zero_velocity_command`: D400: First line should end with a period (not 'n')\n"}
+[1.193209] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_emergency_stop_monitor.py:29 in public method `test_zero_velocity_command`: D415: First line should end with a period, question mark, or exclamation point (not 'n')\n"}
+[1.193253] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_turtle_gamepad_controller.py:16 in public method `setup_class`: D400: First line should end with a period (not 't')\n"}
+[1.193296] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_turtle_gamepad_controller.py:16 in public method `setup_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')\n"}
+[1.193339] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_turtle_gamepad_controller.py:16 in public method `setup_class`: D401: First line should be in imperative mood; try rephrasing (found 'Setup')\n"}
+[1.193382] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_turtle_gamepad_controller.py:21 in public method `teardown_class`: D400: First line should end with a period (not 't')\n"}
+[1.193426] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_turtle_gamepad_controller.py:21 in public method `teardown_class`: D415: First line should end with a period, question mark, or exclamation point (not 't')\n"}
+[1.193471] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_turtle_gamepad_controller.py:25 in public method `test_joy_message_format`: D400: First line should end with a period (not 't')\n"}
+[1.193514] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_turtle_gamepad_controller.py:25 in public method `test_joy_message_format`: D415: First line should end with a period, question mark, or exclamation point (not 't')\n"}
+[1.193557] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_turtle_gamepad_controller.py:34 in public method `test_twist_message_creation`: D400: First line should end with a period (not 'n')\n"}
+[1.193601] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_turtle_gamepad_controller.py:34 in public method `test_twist_message_creation`: D415: First line should end with a period, question mark, or exclamation point (not 'n')\n"}
+[1.193644] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_turtle_gamepad_controller.py:47 in public method `test_emergency_stop_message`: D400: First line should end with a period (not 'e')\n"}
+[1.193687] (turtle_gamepad_2) StdoutLine: {'line': b"test/test_turtle_gamepad_controller.py:47 in public method `test_emergency_stop_message`: D415: First line should end with a period, question mark, or exclamation point (not 'e')\n"}
+[1.193730] (turtle_gamepad_2) StdoutLine: {'line': b'52 errors\n'}
+[1.193773] (turtle_gamepad_2) StdoutLine: {'line': b'- generated xml file: /home/jeff/omni-robot/build/turtle_gamepad_2/pytest.xml --\n'}
+[1.193816] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[36m\x1b[1m=========================== short test summary info ============================\x1b[0m\n'}
+[1.193859] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[31mFAILED\x1b[0m test/test_flake8.py::\x1b[1mtest_flake8\x1b[0m - AssertionError: Found 50 code style errors / warnings:\n'}
+[1.193900] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[31mFAILED\x1b[0m test/test_pep257.py::\x1b[1mtest_pep257\x1b[0m - AssertionError: Found code style errors / warnings\n'}
+[1.193949] (turtle_gamepad_2) StdoutLine: {'line': b'\x1b[31m============= \x1b[31m\x1b[1m2 failed\x1b[0m, \x1b[32m5 passed\x1b[0m, \x1b[33m1 skipped\x1b[0m, \x1b[33m12 warnings\x1b[0m\x1b[31m in 0.53s\x1b[0m\x1b[31m ==============\x1b[0m\n'}
+[1.202146] (-) TimerEvent: {}
+[1.253524] (turtle_gamepad_2) CommandEnded: {'returncode': 1}
+[1.253837] (turtle_gamepad_2) TestFailure: {'identifier': 'turtle_gamepad_2'}
+[1.253858] (turtle_gamepad_2) JobEnded: {'identifier': 'turtle_gamepad_2', 'rc': 0}
+[1.254383] (-) EventReactorShutdown: {}

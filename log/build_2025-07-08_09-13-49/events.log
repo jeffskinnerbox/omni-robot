@@ -1,0 +1,68 @@
+[0.000000] (-) TimerEvent: {}
+[0.000176] (-) JobUnselected: {'identifier': 'manual_drive'}
+[0.000212] (-) JobUnselected: {'identifier': 'teleoperator'}
+[0.000231] (-) JobUnselected: {'identifier': 'turtle_gamepad'}
+[0.000246] (-) JobUnselected: {'identifier': 'turtle_gamepad_3'}
+[0.000262] (turtle_gamepad_2) JobQueued: {'identifier': 'turtle_gamepad_2', 'dependencies': OrderedDict()}
+[0.000594] (turtle_gamepad_2) JobStarted: {'identifier': 'turtle_gamepad_2'}
+[0.099745] (-) TimerEvent: {}
+[0.200021] (-) TimerEvent: {}
+[0.300265] (-) TimerEvent: {}
+[0.400587] (-) TimerEvent: {}
+[0.500899] (-) TimerEvent: {}
+[0.601211] (-) TimerEvent: {}
+[0.701531] (-) TimerEvent: {}
+[0.801854] (-) TimerEvent: {}
+[0.884354] (turtle_gamepad_2) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/turtle_gamepad_2', 'build', '--build-base', '/home/jeff/omni-robot/build/turtle_gamepad_2/build', 'install', '--record', '/home/jeff/omni-robot/build/turtle_gamepad_2/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jeff/omni-robot/src/turtle_gamepad_2', 'env': {'__EGL_VENDOR_LIBRARY_DIRS': '/snap/alacritty/149/etc/glvnd/egl_vendor.d:/snap/alacritty/149/usr/share/glvnd/egl_vendor.d', 'SNAP_INSTANCE_KEY': '', 'USER': 'jeff', 'SNAP_COMMON': '/var/snap/alacritty/common', 'SSH_CLIENT': '192.168.1.200 59012 22', 'FONTCONFIG_PATH': '/snap/alacritty/149/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'LIBVA_DRIVERS_PATH': '/snap/alacritty/149/usr/lib/x86_64-linux-gnu/dri', 'GIO_MODULE_DIR': '/home/jeff/snap/alacritty/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'tty', 'XDG_TEMPLATES_DIR': '/home/jeff/Templates', 'SNAP_UID': '1000', 'XDG_CACHE_HOME': '/home/jeff/.cache', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/snap/alacritty/149/usr/lib/x86_64-linux-gnu/dri', 'HOME': '/home/jeff', 'XLOCALEDIR': '/snap/alacritty/149/usr/share/X11/locale', 'SNAP_LIBRARY_PATH': '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void', 'OLDPWD': '/home/jeff', 'SNAP_USER_DATA': '/home/jeff/snap/alacritty/149', 'NVM_BIN': '/home/jeff/.nvm/versions/node/v22.15.0/bin', 'SSH_TTY': '/dev/pts/0', 'NVM_INC': '/home/jeff/.nvm/versions/node/v22.15.0/include/node', 'XDG_DOCUMENTS_DIR': '/home/jeff/Documents', 'ROS_PYTHON_VERSION': '3', 'OPENSCADPATH': '/home/jeff/cad/openscad_libs', 'ARDMK_DIR': '/home/jeff/src/arduino-makefile', 'PAGER': 'less', 'XDG_VIDEOS_DIR': '/home/jeff/Videos', 'VISUAL': 'vim', 'XDG_STATE_HOME': '/home/jeff/.local/state', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'SNAP_REVISION': '149', 'COLORTERM': 'truecolor', 'XDG_DESKTOP_DIR': '/home/jeff/Desktop', 'MID_PATH': '/home/jeff/.pyenv/bin:/usr/bin:/usr/sbin:/usr/local/bin', 'NVM_DIR': '/home/jeff/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'GST_PLUGIN_SCANNER': '/snap/alacritty/149/usr/lib/x86_64-linux-gnu/gstreamer1.0/gstreamer-1.0/gst-plugin-scanner', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jeff', 'XDG_MUSIC_DIR': '/home/jeff/Music', 'ALACRITTY_SOCKET': '/run/user/1000/Alacritty-localhost:10.0-69948.sock', 'XKB_CONFIG_ROOT': '/snap/alacritty/149/usr/share/X11/xkb', 'WINDOWID': '69206019', 'ANSIBLE_CONFIG': '/home/jeff/.ansible.cfg', 'ARDUINO_DIR': '/home/jeff/src/arduino-Nov-5-2018', 'SNAP_CONTEXT': 'wPkJuCC3ND_JCtJHoMtCA6AweQT-23oCkWsidNPjAIxt7C0w4aJp', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'SNAP_VERSION': '0.15.0', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '382', 'ALACRITTY_LOG': '/tmp/Alacritty-69948.log', 'XDG_PICTURES_DIR': '/home/jeff/Pictures', 'XDG_PUBLICSHARE_DIR': '/home/jeff/Public', 'SNAP_INSTANCE_NAME': 'alacritty', 'AVR_TOOLS_DIR': '/home/jeff/src/arduino-Nov-5-2018/hardware/tools/avr', 'VDPAU_DRIVER_PATH': '/usr/lib/x86_64-linux-gnu/vdpau/', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/jeff/.nvm/versions/node/v22.15.0/bin:/home/jeff/bin:/home/jeff/.local/bin:/snap/bin:/usr/bin:/usr/sbin:/usr/local/bin:/bin:/sbin', 'SNAP_DATA': '/var/snap/alacritty/149', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GST_PLUGIN_SYSTEM_PATH': '/snap/alacritty/149/usr/lib/x86_64-linux-gnu/gstreamer-1.0', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'XDG_DATA_HOME': '/home/jeff/.local/share', 'XDG_CONFIG_HOME': '/home/jeff/.config', 'MANPAGER': 'less', 'SNAP_USER_COMMON': '/home/jeff/snap/alacritty/common', 'SNAP_ARCH': 'amd64', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SNAP_COOKIE': 'wPkJuCC3ND_JCtJHoMtCA6AweQT-23oCkWsidNPjAIxt7C0w4aJp', 'SHELL': '/bin/bash', 'GDK_PIXBUF_MODULEDIR': '/snap/alacritty/149/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders', 'GST_PLUGIN_PATH': '/snap/alacritty/149/usr/lib/x86_64-linux-gnu/gstreamer-1.0', 'SNAP_REEXEC': '', 'SNAP_NAME': 'alacritty', 'FONTCONFIG_FILE': '/snap/alacritty/149/etc/fonts/fonts.conf', 'XCURSOR_PATH': '/snap/alacritty/149/usr/share/icons', 'GDK_PIXBUF_MODULE_FILE': '/home/jeff/snap/alacritty/common/.cache/gdk-pixbuf-loaders.cache', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'SNAP_LAUNCHER_ARCH_TRIPLET': 'x86_64-linux-gnu', 'ALACRITTY_WINDOW_ID': '69206019', 'PWD': '/home/jeff/omni-robot/build/turtle_gamepad_2', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg', 'SNAP_REAL_HOME': '/home/jeff', 'SSH_CONNECTION': '192.168.1.200 59012 192.168.1.154 22', 'NVM_CD_FLAGS': '', 'PYENV_ROOT': '/home/jeff/.pyenv', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/', 'SNAP_EUID': '1000', 'XDG_DOWNLOAD_DIR': '/home/jeff/Downloads', 'PYTHONPATH': '/home/jeff/omni-robot/build/turtle_gamepad_2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/jeff/.local/bin', 'SNAP': '/snap/alacritty/149', 'COLCON': '1', 'TERMINAL': 'alacritty-ros', 'EDITOR': 'vim', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'LIBGL_DRIVERS_PATH': '/snap/alacritty/149/usr/lib/x86_64-linux-gnu/dri'}, 'shell': False}
+[0.901919] (-) TimerEvent: {}
+[1.002138] (-) TimerEvent: {}
+[1.101131] (turtle_gamepad_2) StdoutLine: {'line': b'running egg_info\n'}
+[1.101412] (turtle_gamepad_2) StdoutLine: {'line': b'creating ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info\n'}
+[1.102195] (-) TimerEvent: {}
+[1.117508] (turtle_gamepad_2) StdoutLine: {'line': b'writing ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/PKG-INFO\n'}
+[1.117746] (turtle_gamepad_2) StdoutLine: {'line': b'writing dependency_links to ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/dependency_links.txt\n'}
+[1.117933] (turtle_gamepad_2) StdoutLine: {'line': b'writing entry points to ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/entry_points.txt\n'}
+[1.118064] (turtle_gamepad_2) StdoutLine: {'line': b'writing requirements to ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/requires.txt\n'}
+[1.118210] (turtle_gamepad_2) StdoutLine: {'line': b'writing top-level names to ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/top_level.txt\n'}
+[1.118357] (turtle_gamepad_2) StdoutLine: {'line': b"writing manifest file '../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/SOURCES.txt'\n"}
+[1.151144] (turtle_gamepad_2) StdoutLine: {'line': b"reading manifest file '../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/SOURCES.txt'\n"}
+[1.151686] (turtle_gamepad_2) StdoutLine: {'line': b"writing manifest file '../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/SOURCES.txt'\n"}
+[1.151864] (turtle_gamepad_2) StdoutLine: {'line': b'running build\n'}
+[1.151992] (turtle_gamepad_2) StdoutLine: {'line': b'running build_py\n'}
+[1.152155] (turtle_gamepad_2) StdoutLine: {'line': b'creating /home/jeff/omni-robot/build/turtle_gamepad_2/build\n'}
+[1.152277] (turtle_gamepad_2) StdoutLine: {'line': b'creating /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib\n'}
+[1.152331] (turtle_gamepad_2) StdoutLine: {'line': b'creating /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2\n'}
+[1.152384] (turtle_gamepad_2) StdoutLine: {'line': b'copying turtle_gamepad_2/__init__.py -> /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2\n'}
+[1.152467] (turtle_gamepad_2) StdoutLine: {'line': b'copying turtle_gamepad_2/emergency_stop_monitor.py -> /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2\n'}
+[1.152522] (turtle_gamepad_2) StdoutLine: {'line': b'copying turtle_gamepad_2/turtle_gamepad_controller.py -> /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2\n'}
+[1.152609] (turtle_gamepad_2) StdoutLine: {'line': b'running install\n'}
+[1.157036] (turtle_gamepad_2) StdoutLine: {'line': b'running install_lib\n'}
+[1.173660] (turtle_gamepad_2) StdoutLine: {'line': b'creating /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2\n'}
+[1.173825] (turtle_gamepad_2) StdoutLine: {'line': b'copying /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2/__init__.py -> /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2\n'}
+[1.173989] (turtle_gamepad_2) StdoutLine: {'line': b'copying /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2/emergency_stop_monitor.py -> /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2\n'}
+[1.174105] (turtle_gamepad_2) StdoutLine: {'line': b'copying /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2/turtle_gamepad_controller.py -> /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2\n'}
+[1.174361] (turtle_gamepad_2) StdoutLine: {'line': b'byte-compiling /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2/__init__.py to __init__.cpython-312.pyc\n'}
+[1.174568] (turtle_gamepad_2) StdoutLine: {'line': b'byte-compiling /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2/emergency_stop_monitor.py to emergency_stop_monitor.cpython-312.pyc\n'}
+[1.175078] (turtle_gamepad_2) StdoutLine: {'line': b'byte-compiling /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2/turtle_gamepad_controller.py to turtle_gamepad_controller.cpython-312.pyc\n'}
+[1.176002] (turtle_gamepad_2) StdoutLine: {'line': b'running install_data\n'}
+[1.176080] (turtle_gamepad_2) StdoutLine: {'line': b'creating /home/jeff/omni-robot/install/turtle_gamepad_2/share/ament_index\n'}
+[1.176146] (turtle_gamepad_2) StdoutLine: {'line': b'creating /home/jeff/omni-robot/install/turtle_gamepad_2/share/ament_index/resource_index\n'}
+[1.176213] (turtle_gamepad_2) StdoutLine: {'line': b'creating /home/jeff/omni-robot/install/turtle_gamepad_2/share/ament_index/resource_index/packages\n'}
+[1.176338] (turtle_gamepad_2) StdoutLine: {'line': b'copying resource/turtle_gamepad_2 -> /home/jeff/omni-robot/install/turtle_gamepad_2/share/ament_index/resource_index/packages\n'}
+[1.176477] (turtle_gamepad_2) StdoutLine: {'line': b'copying package.xml -> /home/jeff/omni-robot/install/turtle_gamepad_2/share/turtle_gamepad_2\n'}
+[1.176636] (turtle_gamepad_2) StdoutLine: {'line': b'creating /home/jeff/omni-robot/install/turtle_gamepad_2/share/turtle_gamepad_2/launch\n'}
+[1.176757] (turtle_gamepad_2) StdoutLine: {'line': b'copying launch/turtle_gamepad_launch.py -> /home/jeff/omni-robot/install/turtle_gamepad_2/share/turtle_gamepad_2/launch\n'}
+[1.176919] (turtle_gamepad_2) StdoutLine: {'line': b'copying launch/turtle_gamepad_simple_launch.py -> /home/jeff/omni-robot/install/turtle_gamepad_2/share/turtle_gamepad_2/launch\n'}
+[1.177027] (turtle_gamepad_2) StdoutLine: {'line': b'creating /home/jeff/omni-robot/install/turtle_gamepad_2/share/turtle_gamepad_2/config\n'}
+[1.177135] (turtle_gamepad_2) StdoutLine: {'line': b'copying config/f310_config.yaml -> /home/jeff/omni-robot/install/turtle_gamepad_2/share/turtle_gamepad_2/config\n'}
+[1.177233] (turtle_gamepad_2) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.194114] (turtle_gamepad_2) StdoutLine: {'line': b'Copying ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info to /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2-0.0.0-py3.12.egg-info\n'}
+[1.194930] (turtle_gamepad_2) StdoutLine: {'line': b'running install_scripts\n'}
+[1.202264] (-) TimerEvent: {}
+[1.302467] (-) TimerEvent: {}
+[1.308164] (turtle_gamepad_2) StdoutLine: {'line': b'Installing emergency_stop_monitor script to /home/jeff/omni-robot/install/turtle_gamepad_2/lib/turtle_gamepad_2\n'}
+[1.308388] (turtle_gamepad_2) StdoutLine: {'line': b'Installing turtle_gamepad_controller script to /home/jeff/omni-robot/install/turtle_gamepad_2/lib/turtle_gamepad_2\n'}
+[1.308584] (turtle_gamepad_2) StdoutLine: {'line': b"writing list of installed files to '/home/jeff/omni-robot/build/turtle_gamepad_2/install.log'\n"}
+[1.331430] (turtle_gamepad_2) CommandEnded: {'returncode': 0}
+[1.338834] (turtle_gamepad_2) JobEnded: {'identifier': 'turtle_gamepad_2', 'rc': 0}
+[1.339684] (-) EventReactorShutdown: {}

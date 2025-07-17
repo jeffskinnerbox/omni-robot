@@ -1,0 +1,44 @@
+running egg_info
+creating ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info
+writing ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/dependency_links.txt
+writing entry points to ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/entry_points.txt
+writing requirements to ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/requires.txt
+writing top-level names to ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/top_level.txt
+writing manifest file '../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/SOURCES.txt'
+reading manifest file '../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/SOURCES.txt'
+writing manifest file '../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jeff/omni-robot/build/turtle_gamepad_2/build
+creating /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib
+creating /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2
+copying turtle_gamepad_2/__init__.py -> /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2
+copying turtle_gamepad_2/emergency_stop_monitor.py -> /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2
+copying turtle_gamepad_2/turtle_gamepad_controller.py -> /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2
+running install
+running install_lib
+creating /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2
+copying /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2/__init__.py -> /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2
+copying /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2/emergency_stop_monitor.py -> /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2
+copying /home/jeff/omni-robot/build/turtle_gamepad_2/build/lib/turtle_gamepad_2/turtle_gamepad_controller.py -> /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2
+byte-compiling /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2/emergency_stop_monitor.py to emergency_stop_monitor.cpython-312.pyc
+byte-compiling /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2/turtle_gamepad_controller.py to turtle_gamepad_controller.cpython-312.pyc
+running install_data
+creating /home/jeff/omni-robot/install/turtle_gamepad_2/share/ament_index
+creating /home/jeff/omni-robot/install/turtle_gamepad_2/share/ament_index/resource_index
+creating /home/jeff/omni-robot/install/turtle_gamepad_2/share/ament_index/resource_index/packages
+copying resource/turtle_gamepad_2 -> /home/jeff/omni-robot/install/turtle_gamepad_2/share/ament_index/resource_index/packages
+copying package.xml -> /home/jeff/omni-robot/install/turtle_gamepad_2/share/turtle_gamepad_2
+creating /home/jeff/omni-robot/install/turtle_gamepad_2/share/turtle_gamepad_2/launch
+copying launch/turtle_gamepad_launch.py -> /home/jeff/omni-robot/install/turtle_gamepad_2/share/turtle_gamepad_2/launch
+copying launch/turtle_gamepad_simple_launch.py -> /home/jeff/omni-robot/install/turtle_gamepad_2/share/turtle_gamepad_2/launch
+creating /home/jeff/omni-robot/install/turtle_gamepad_2/share/turtle_gamepad_2/config
+copying config/f310_config.yaml -> /home/jeff/omni-robot/install/turtle_gamepad_2/share/turtle_gamepad_2/config
+running install_egg_info
+Copying ../../build/turtle_gamepad_2/turtle_gamepad_2.egg-info to /home/jeff/omni-robot/install/turtle_gamepad_2/lib/python3.12/site-packages/turtle_gamepad_2-0.0.0-py3.12.egg-info
+running install_scripts
+Installing emergency_stop_monitor script to /home/jeff/omni-robot/install/turtle_gamepad_2/lib/turtle_gamepad_2
+Installing turtle_gamepad_controller script to /home/jeff/omni-robot/install/turtle_gamepad_2/lib/turtle_gamepad_2
+writing list of installed files to '/home/jeff/omni-robot/build/turtle_gamepad_2/install.log'

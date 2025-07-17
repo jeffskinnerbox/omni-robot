@@ -1,0 +1,41 @@
+# Logitech F310 Gamepad Configuration for XInput mode on Linux
+# Device: /dev/input/js0
+
+# Axis mappings (analog sticks and triggers)
+axis_linear_x: 1      # Left stick vertical (forward/backward)
+axis_linear_y: 0      # Left stick horizontal (left/right strafe)
+axis_angular_z: 3     # Right stick horizontal (rotation)
+
+# Axis scaling factors
+scale_linear: 2.0     # Maximum linear velocity (m/s)
+scale_angular: 2.0    # Maximum angular velocity (rad/s)
+
+# Deadzone settings
+axis_deadzone: 0.1    # Joystick deadzone
+
+# Button mappings
+enable_button: 4      # Left bumper (LB) - must be held to enable movement
+turbo_button: 5       # Right bumper (RB) - turbo mode when held
+
+# Additional button mappings for future use
+button_a: 0          # A button
+button_b: 1          # B button  
+button_x: 2          # X button
+button_y: 3          # Y button
+button_back: 6       # Back button
+button_start: 7      # Start button
+button_guide: 8      # Guide/Home button
+button_lstick: 9     # Left stick click
+button_rstick: 10    # Right stick click
+
+# D-pad mappings (treated as axes on F310)
+dpad_horizontal: 6   # D-pad left/right
+dpad_vertical: 7     # D-pad up/down
+
+# Trigger mappings
+left_trigger: 2      # Left trigger (LT)
+right_trigger: 5     # Right trigger (RT)
+
+# Advanced settings
+require_enable_button: true
+turbo_scale: 3.0     # Multiplier when turbo is active

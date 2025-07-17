@@ -1,0 +1,61 @@
+# Logitech F310 Gamepad Configuration for ROS2 Jazzy
+# XInput mode configuration for Linux
+
+# Joy node configuration
+joy_node:
+  ros__parameters:
+    device_id: 0
+    deadzone: 0.05
+    autorepeat_rate: 20.0
+
+# Teleop twist joy configuration
+teleop_twist_joy_node:
+  ros__parameters:
+    # Axis mappings (F310 XInput mode)
+    axis_linear:
+      x: 1    # Left stick vertical (forward/backward)
+    axis_angular:
+      yaw: 0  # Left stick horizontal (turn left/right)
+    
+    # Scale factors
+    scale_linear: 2.0
+    scale_linear_turbo: 5.0
+    scale_angular: 2.0
+    scale_angular_turbo: 5.0
+    
+    # Button mappings
+    enable_button: 4  # Left bumper (LB)
+    enable_turbo_button: 5  # Right bumper (RB)
+    
+    # Require enable button to be pressed for movement
+    require_enable_button: true
+
+# F310 Button and Axis Reference (XInput mode):
+# Buttons:
+#   0: A
+#   1: B  
+#   2: X
+#   3: Y
+#   4: LB (Left Bumper)
+#   5: RB (Right Bumper)
+#   6: Back
+#   7: Start
+#   8: Guide/Xbox button
+#   9: Left stick click
+#   10: Right stick click
+#
+# Axes:
+#   0: Left stick horizontal (-1.0 = left, +1.0 = right)
+#   1: Left stick vertical (-1.0 = up, +1.0 = down)
+#   2: LT (Left Trigger) (0.0 = not pressed, +1.0 = fully pressed)
+#   3: Right stick horizontal (-1.0 = left, +1.0 = right)
+#   4: Right stick vertical (-1.0 = up, +1.0 = down)
+#   5: RT (Right Trigger) (0.0 = not pressed, +1.0 = fully pressed)
+#   6: D-pad horizontal (-1.0 = left, +1.0 = right)
+#   7: D-pad vertical (-1.0 = up, +1.0 = down)
+
+# Emergency stop configuration
+emergency_stop:
+  ros__parameters:
+    emergency_button: 1  # B button for emergency stop
+    reset_button: 0      # A button to reset emergency stop

@@ -1,0 +1,32 @@
+# Configuration for Logitech F310 Gamepad in XInput mode on Linux
+# This file configures the teleop_twist_joy node for turtlesim control
+
+teleop_twist_joy_node:
+  ros__parameters:
+    axis_linear:
+      x: 1                  # Left stick vertical axis (forward/backward)
+    scale_linear:
+      x: 2.0                # Maximum linear velocity (m/s)
+    scale_linear_turbo:
+      x: 5.0                # Turbo linear velocity when button is pressed
+    
+    axis_angular:
+      yaw: 0                # Left stick horizontal axis (left/right rotation)
+    scale_angular:
+      yaw: 2.0              # Maximum angular velocity (rad/s)
+    scale_angular_turbo:
+      yaw: 4.0              # Turbo angular velocity when button is pressed
+    
+    enable_button: 4        # Left bumper (LB) - must be held to enable movement
+    enable_turbo_button: 5  # Right bumper (RB) - hold for turbo mode
+    
+    # Invert axes if needed (set to true to reverse direction)
+    invert_x: false
+    invert_y: false
+    invert_z: false
+    
+    # Deadzone settings to prevent drift from stick imprecision
+    deadzone: 0.1
+    
+    # Publishing rate
+    publish_rate: 30.0  # Hz

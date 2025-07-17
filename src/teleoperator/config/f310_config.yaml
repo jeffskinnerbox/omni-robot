@@ -1,0 +1,47 @@
+# Logitech F310 Gamepad Configuration for Linux XInput Mode
+joy_node:
+  ros__parameters:
+    device_id: 0
+    deadzone: 0.05
+    autorepeat_rate: 20.0
+
+teleop_twist_joy_node:
+  ros__parameters:
+    axis_linear:
+      x: 1  # Left stick vertical
+    scale_linear:
+      x: 2.0
+    axis_angular:
+      yaw: 0  # Left stick horizontal
+    scale_angular:
+      yaw: 2.0
+    enable_button: 4  # Left bumper (LB)
+    enable_turbo_button: 5  # Right bumper (RB)
+    scale_linear_turbo:
+      x: 4.0
+    scale_angular_turbo:
+      yaw: 4.0
+
+# F310 Button/Axis Mapping (XInput mode):
+# Axes:
+#   0: Left stick horizontal (left negative, right positive)
+#   1: Left stick vertical (up negative, down positive)
+#   2: Left trigger (0.0 to 1.0)
+#   3: Right stick horizontal
+#   4: Right stick vertical
+#   5: Right trigger (0.0 to 1.0)
+#   6: D-pad horizontal
+#   7: D-pad vertical
+#
+# Buttons:
+#   0: A
+#   1: B
+#   2: X
+#   3: Y
+#   4: LB (Left bumper)
+#   5: RB (Right bumper)
+#   6: Back
+#   7: Start
+#   8: Guide
+#   9: Left stick click
+#   10: Right stick click
