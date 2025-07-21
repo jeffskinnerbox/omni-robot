@@ -1,15 +1,18 @@
 # Turtle Gamepad 2 Guide
 
 ## Overview
+
 This guide demonstrates how to control the ROS2 turtlesim turtle using a Logitech F310 gamepad controller with emergency stop functionality.
 
 ## Prerequisites
+
 - Ubuntu 22.04 or later
 - ROS2 Jazzy Jalisco installed
 - Logitech F310 gamepad controller
 - Python 3.10+
 
 ## Required ROS2 Packages
+
 ```bash
 sudo apt update
 sudo apt install ros-jazzy-turtlesim ros-jazzy-joy ros-jazzy-teleop-twist-joy
@@ -18,18 +21,21 @@ sudo apt install ros-jazzy-turtlesim ros-jazzy-joy ros-jazzy-teleop-twist-joy
 ## Step 1: Create ROS2 Workspace and Package
 
 ### 1.1 Create Workspace
+
 ```bash
 mkdir -p ~/omni-robot/src
 cd ~/omni-robot
 ```
 
 ### 1.2 Create Package
+
 ```bash
 cd src
 ros2 pkg create --build-type ament_python turtle_gamepad_2 --dependencies rclpy geometry_msgs sensor_msgs std_msgs
 ```
 
 ### 1.3 Navigate to Package
+
 ```bash
 cd turtle_gamepad_2
 ```
@@ -37,7 +43,9 @@ cd turtle_gamepad_2
 ## Step 2: Package Configuration
 
 ### 2.1 Update package.xml
+
 Edit `package.xml` to include additional dependencies:
+
 ```xml
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
@@ -68,6 +76,7 @@ Edit `package.xml` to include additional dependencies:
 ```
 
 ### 2.2 Update setup.py
+
 ```python
 from setuptools import find_packages, setup
 import os
@@ -105,11 +114,13 @@ setup(
 ## Step 3: Create Configuration Files
 
 ### 3.1 Create config directory and F310 configuration
+
 ```bash
 mkdir -p config
 ```
 
 Create `config/f310_config.yaml`:
+
 ```yaml
 # Logitech F310 Gamepad Configuration for ROS2 Jazzy
 # XInput mode configuration for Linux
@@ -177,7 +188,9 @@ emergency_stop:
 ## Step 4: Create Python Nodes
 
 ### 4.1 Create the main controller node
+
 Create `turtle_gamepad_2/turtle_gamepad_controller.py`:
+
 ```python
 #!/usr/bin/env python3
 
@@ -345,7 +358,9 @@ if __name__ == '__main__':
 ```
 
 ### 4.2 Create emergency stop monitor node
+
 Create `turtle_gamepad_2/emergency_stop_monitor.py`:
+
 ```python
 #!/usr/bin/env python3
 
@@ -416,7 +431,9 @@ if __name__ == '__main__':
 ```
 
 ### 4.3 Create __init__.py
+
 Create `turtle_gamepad_2/__init__.py` (empty file):
+
 ```python
 # This file makes the directory a Python package
 ```
@@ -424,12 +441,15 @@ Create `turtle_gamepad_2/__init__.py` (empty file):
 ## Step 5: Create Launch Files
 
 ### 5.1 Create launch directory
+
 ```bash
 mkdir -p launch
 ```
 
 ### 5.2 Create main launch file
+
 Create `launch/turtle_gamepad_launch.py`:
+
 ```python
 #!/usr/bin/env python3
 
@@ -521,7 +541,9 @@ def generate_launch_description():
 ```
 
 ### 5.3 Create simplified launch file
+
 Create `launch/turtle_gamepad_simple_launch.py`:
+
 ```python
 #!/usr/bin/env python3
 
@@ -576,12 +598,15 @@ def generate_launch_description():
 ## Step 6: Create Test Files
 
 ### 6.1 Create test directory
+
 ```bash
 mkdir -p test
 ```
 
 ### 6.2 Create test files
+
 Create `test/test_turtle_gamepad_controller.py`:
+
 ```python
 #!/usr/bin/env python3
 
@@ -644,6 +669,7 @@ if __name__ == '__main__':
 ```
 
 Create `test/test_emergency_stop_monitor.py`:
+
 ```python
 #!/usr/bin/env python3
 
@@ -691,22 +717,26 @@ if __name__ == '__main__':
 ## Step 7: Build and Test
 
 ### 7.1 Install dependencies
+
 ```bash
 cd ~/omni-robot
 rosdep install --from-paths src --ignore-src -r -y
 ```
 
 ### 7.2 Build the workspace
+
 ```bash
 colcon build --packages-select turtle_gamepad_2
 ```
 
 ### 7.3 Source the workspace
+
 ```bash
 source install/setup.bash
 ```
 
 ### 7.4 Run tests
+
 ```bash
 # Run Python tests
 cd src/turtle_gamepad_2
@@ -721,9 +751,11 @@ colcon test-result --verbose
 ## Step 8: Hardware Setup
 
 ### 8.1 Connect the F310 Controller
+
 1. Connect the Logitech F310 controller via USB
 2. Set the controller to XInput mode (switch on back should be in 'X' position)
 3. Test controller detection:
+
 ```bash
 ls /dev/input/js*
 # Should show something like /dev/input/js0
@@ -733,6 +765,7 @@ jstest /dev/input/js0
 ```
 
 ### 8.2 Grant permissions (if needed)
+
 ```bash
 sudo chmod a+rw /dev/input/js0
 ```
@@ -742,6 +775,7 @@ sudo chmod a+rw /dev/input/js0
 ### 9.1 Manual Node Execution
 
 #### Terminal 1: Launch turtlesim
+
 ```bash
 cd ~/omni-robot
 source install/setup.bash
@@ -749,6 +783,7 @@ ros2 run turtlesim turtlesim_node
 ```
 
 #### Terminal 2: Launch joy node
+
 ```bash
 cd ~/omni-robot
 source install/setup.bash
@@ -756,6 +791,7 @@ ros2 run joy joy_node --ros-args --params-file src/turtle_gamepad_2/config/f310_
 ```
 
 #### Terminal 3: Launch turtle controller
+
 ```bash
 cd ~/omni-robot
 source install/setup.bash
@@ -763,6 +799,7 @@ ros2 run turtle_gamepad_2 turtle_gamepad_controller --ros-args --params-file src
 ```
 
 #### Terminal 4: Launch emergency stop monitor
+
 ```bash
 cd ~/omni-robot
 source install/setup.bash
@@ -772,6 +809,7 @@ ros2 run turtle_gamepad_2 emergency_stop_monitor
 ### 9.2 Launch File Execution
 
 #### Full launch (all nodes)
+
 ```bash
 cd ~/omni-robot
 source install/setup.bash
@@ -779,6 +817,7 @@ ros2 launch turtle_gamepad_2 turtle_gamepad_launch.py
 ```
 
 #### Simple launch (essential nodes only)
+
 ```bash
 cd ~/omni-robot
 source install/setup.bash
@@ -788,13 +827,15 @@ ros2 launch turtle_gamepad_2 turtle_gamepad_simple_launch.py
 ## Step 10: Usage Instructions
 
 ### 10.1 Controller Layout (F310 XInput Mode)
-- **Left Stick**: Move turtle (vertical = forward/backward, horizontal = turn left/right)
-- **Left Bumper (LB)**: Enable button - must be held for movement
-- **Right Bumper (RB)**: Turbo mode - faster movement when held with LB
-- **B Button**: Emergency stop - immediately stops turtle and disables movement
-- **A Button**: Reset emergency stop - re-enables movement after emergency stop
+
+- __Left Stick__: Move turtle (vertical = forward/backward, horizontal = turn left/right)
+- __Left Bumper (LB)__: Enable button - must be held for movement
+- __Right Bumper (RB)__: Turbo mode - faster movement when held with LB
+- __B Button__: Emergency stop - immediately stops turtle and disables movement
+- __A Button__: Reset emergency stop - re-enables movement after emergency stop
 
 ### 10.2 Operation Steps
+
 1. Launch the application using one of the methods above
 2. The turtlesim window should open showing the turtle
 3. Hold the Left Bumper (LB) and use the left stick to move the turtle
@@ -802,14 +843,16 @@ ros2 launch turtle_gamepad_2 turtle_gamepad_simple_launch.py
 5. Press A button to reset and resume normal operation
 
 ### 10.3 Safety Features
-- **Dead-man's Switch**: Movement only occurs when LB is held
-- **Emergency Stop**: B button immediately stops all movement
-- **Turbo Mode**: RB + LB for faster movement
-- **Deadzone**: Small joystick movements are ignored to prevent drift
+
+- __Dead-man's Switch__: Movement only occurs when LB is held
+- __Emergency Stop__: B button immediately stops all movement
+- __Turbo Mode__: RB + LB for faster movement
+- __Deadzone__: Small joystick movements are ignored to prevent drift
 
 ## Step 11: Troubleshooting
 
 ### 11.1 Controller Not Detected
+
 ```bash
 # Check if controller is connected
 lsusb | grep Logitech
@@ -822,6 +865,7 @@ jstest /dev/input/js0
 ```
 
 ### 11.2 Permission Issues
+
 ```bash
 # Add user to input group
 sudo usermod -a -G input $USER
@@ -834,6 +878,7 @@ sudo chmod 666 /dev/input/js0
 ```
 
 ### 11.3 Debug Topics
+
 ```bash
 # Monitor joy messages
 ros2 topic echo /joy
@@ -849,6 +894,7 @@ ros2 topic list
 ```
 
 ### 11.4 Node Status
+
 ```bash
 # Check running nodes
 ros2 node list
@@ -860,7 +906,9 @@ ros2 node info /turtle_gamepad_controller
 ## Step 12: Additional Features
 
 ### 12.1 Parameter Tuning
+
 You can adjust parameters in the `config/f310_config.yaml` file:
+
 - `scale_linear`: Normal movement speed
 - `scale_angular`: Normal turning speed
 - `scale_linear_turbo`: Turbo movement speed
@@ -868,12 +916,15 @@ You can adjust parameters in the `config/f310_config.yaml` file:
 - `deadzone`: Joystick deadzone threshold
 
 ### 12.2 Logging
+
 All nodes provide detailed logging output. Use different log levels:
+
 ```bash
 ros2 run turtle_gamepad_2 turtle_gamepad_controller --ros-args --log-level debug
 ```
 
 ### 12.3 Recording and Playback
+
 ```bash
 # Record session
 ros2 bag record -a
@@ -887,6 +938,7 @@ ros2 bag play <bag_file>
 This guide provides a complete solution for controlling the ROS2 turtlesim turtle using a Logitech F310 gamepad with emergency stop functionality. The system includes proper safety features, comprehensive testing, and flexible launch configurations.
 
 Key features implemented:
+
 - ✅ Full F310 gamepad support with XInput mode
 - ✅ Emergency stop with B button
 - ✅ Reset functionality with A button

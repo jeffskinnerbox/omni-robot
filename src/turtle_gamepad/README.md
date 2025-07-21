@@ -31,6 +31,7 @@ This can be found at [ROS2 Turtlesim Gamepad Control](https://claude.ai/chat/fe9
 
 
 # Game Controller Not Working
+
 I had a stubborn problem getting the projects working with the Logitech F310 game controller.
 I initial tested it out with the Linux joystick test tool `jstest` and had no problems.
 Once I created my `joy_node` to read data from the F310,
@@ -62,6 +63,7 @@ In effect, this site states you have to do the following:
 `sudo chmod o+r /dev/input/event*`.
 
 ## Required Remediation
+
 The silent failure of this solution is very undesirable.
 An error message should have been printed when the game controller wasn't detected
 and the program stopped.
@@ -70,6 +72,7 @@ and the program stopped.
 ---------------
 
 # Clean Build When Modifying ROS2 Workspace
+
 I have found that I will have difficulty in getting a clean build when making major modifications of my ROS2 workspace.
 It appears that improper environment variables, left unchanged after the modification, are the root cause of my problems.
 ROS 2 uses environment setup files (like `setup.bash`) to configure your shell environment so that it knows how to find
@@ -96,6 +99,7 @@ Optional methods for cleaning the workspace:
 
 
 # Kill a Running Node
+
 To kill a running ROS2 node, do the following:
 
 ```bash
@@ -138,6 +142,7 @@ colcon build
 
 
 # Completely Rebuild your ROS2 Workspace
+
 By following these steps, you will effectively clean out old build artifacts and rebuild your workspace,
 ensuring that your ROS2 Jazzy Python environment is fresh and properly configured.
 
@@ -173,6 +178,7 @@ colcon test                                                             # <--- t
 
 
 # Test Configuration - Using Manual Launch Commands
+
 I used the code block below to setup my test of the solution.
 Each line was initiated in a separate terminal so I could
 control & observe what was going on.

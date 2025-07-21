@@ -283,6 +283,7 @@ This document outlines the comprehensive development plan for creating a teleope
 ## 6. Custom Message Definitions Required
 
 ### MotorSpeeds.msg
+
 ```
 float32 motor1_speed
 float32 motor2_speed
@@ -291,6 +292,7 @@ Header header
 ```
 
 ### MotorStatus.msg
+
 ```
 bool motor1_healthy
 bool motor2_healthy
@@ -302,6 +304,7 @@ Header header
 ```
 
 ### EncoderData.msg
+
 ```
 int32 motor1_ticks
 int32 motor2_ticks
@@ -310,6 +313,7 @@ Header header
 ```
 
 ### DistanceArray.msg
+
 ```
 float32[] distances
 string[] sensor_names
@@ -317,6 +321,7 @@ Header header
 ```
 
 ### SafetyStatus.msg
+
 ```
 bool deadman_active
 bool emergency_stop_active

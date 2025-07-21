@@ -100,3 +100,85 @@ Provide me plans for each of the following build increments.
 
 ----
 
+ChatGPT Prompt:
+Create the python code for a 3 omni-directional wheeled robot using ROS2 Jazzy.
+
+ChatGPT Prompt:
+Add the options and next steps you suggested.
+
+ChatGPT Prompt:
+Add the optional next steps.
+
+ChatGPT Prompt:
+Yes.
+
+ChatGPT Prompt:
+Yes.
+
+ChatGPT Response:
+Your complete ROS 2 Jazzy omni-directional robot project is ready!
+👉 Click here to download it as a ZIP file
+
+This archive contains:
+
+* Controller and odometry nodes
+* URDF model
+* ROS 2 control configuration
+* EKF setup
+* RViz config
+* Launch files
+
+Let me know if you'd like this pushed to a GitHub repo or want help deploying it to a real robot.
+
+ChatGPT Prompt:
+Generate a README.md for your GitHub repo that explains the robot, setup, and how to run the simulation.
+
+ChatGPT Prompt:
+Put this README.md file in the zip file you are creating for me and give me a new download prompt for the zip file
+
+ChatGPT Response:
+Your updated project archive now includes the full README.md file.
+
+👉 Click here to download the updated omni_bot.zip
+
+Let me know if you'd like help uploading this to GitHub or customizing it further for your robot hardware.
+
+* Zip file download is in $HOME/Download/omni_bot.zip
+* [Link to this ChatGPT session](https://chatgpt.com/share/687bc53d-f4ac-8009-9480-8bb87fd0c0f6)
+
+----
+
+Code GPT Prompt:
+Create the python code for a 3 omni-directional wheeled robot using ROS2 Jazzy.
+
+Code GPT Prompt:
+I want Gazebo support, PID control, or joystick integration next.
+
+Code GPT Prompt:
+I want RViz visualization, URDF-to-RViz launch, or multi-robot simulation next.
+
+Code GPT Prompt:
+I want to extend with SLAM/Navigation2 support, real hardware driver bridges (e.g., serial, CAN), and diagnostics + dashboard tools.
+
+Code GPT Prompt:
+Bundle all these into a full-stack bringup.launch.py with args like sim:=true and slam:=true.
+
+Code GPT Prompt:
+Add ros2 launch autocompletion CLI helper.
+
+Code GPT Prompt:
+Bundle all of this into a step-by-step guide markdown document that I can use for to create this on my own.
+
+Code GPT Prompt:
+Put this markdown document into a zip file so I can download it.
+
+* Zip file download is in $HOME/Download/omni_robot_guide.zip
+* [Link to this ChatGPT session](https://chatgpt.com/share/687bd398-8338-8009-9b08-d326935b7a02)
+
+----
+
+ChatGPT now give you the right answer to this prompt:
+Alice has 5 bothers and she also has 3 sisters.  How many sisters does Alice's bother have?
+
+----
+

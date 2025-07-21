@@ -33,10 +33,14 @@ Create a launch files for all nodes, for the joy nodes, and all nodes except ros
 "ROS2 Jazzy Manual Drive" has been published publicly at this [link](https://claude.ai/public/artifacts/8bf612bc-5236-4157-9637-d78b09ae75f6)
 
 Sources:
+
 * [Controlling a Robot with multiple Inputs using twist_mux](https://robofoundry.medium.com/controlling-a-robot-with-multiple-inputs-using-twist-mux-4535b8ed9559)
+
 ---------------
 Teleoperation in ROS2 refers to remotely controlling a robot, allowing a human operator to influence the robot's actions from a distance. This involves sending commands to the robot (e.g., movement instructions, sensor data requests) and receiving feedback (e.g., camera images, sensor readings) from it, effectively making the robot an extension of the operator.
+
 * [Add TeleOp to your ROS2 Robot](https://medium.com/@peter.gaston/add-teleop-to-your-ros2-robot-5b7b0a5606ce)
+
 ---------------
 
 
@@ -44,6 +48,7 @@ Teleoperation in ROS2 refers to remotely controlling a robot, allowing a human o
 
 
 # Using Python Packages with ROS 2
+
 The ROS2 Jazzy documentation has a cautionary note deeply buried inside. It states:
 
 _A cautionary note, if you intended to use pre-packaged binaries (either `deb` files, or the binary archive distributions), the Python interpreter must match what was used to build the original binaries. If you intend to use something like `virtualenv` or `pipenv`, make sure to use the system interpreter. If you use something like `conda`, it is very likely that the interpreter will not match the system interpreter and will be incompatible with ROS 2 binaries._
@@ -51,7 +56,7 @@ _A cautionary note, if you intended to use pre-packaged binaries (either `deb` f
 And yes, mixing `apt` and `conda` for installing ROS 2 Jazzy packages can cause problems, especially concerning Python dependencies.
 If you use official `apt` binaries, ensure your `PATH` environment variable doesn't include `conda` paths.
 This is a common source of conflict.
-Mixing `apt` and `conda`` can lead to a "mess" where some packages are installed via `apt`
+Mixing `apt` and `conda`` can lead to a "mess" where some packages are installed via`apt`
 and others via `conda` or `pip` within a `conda` environment.
 This can cause issues when running ROS 2 tools and applications.
 
@@ -59,7 +64,7 @@ ROS2 Jazzy recommends:
 
 _For installing ROS 2 Jazzy using the official `apt` binaries, it's best to avoid mixing `conda` environments
 and rely solely on `apt`` for installing ROS 2 packages and their dependencies.
-If you need to use Python packages not available in `apt`, consider installing them in a
+If you need to use Python packages not available in`apt`, consider installing them in a
 virtual environment that uses the system Python interpreter.
 However, be aware that even this approach may have limitations when working with ROS 2 binaries._
 
@@ -69,48 +74,54 @@ However, be aware that even this approach may have limitations when working with
 Create a ROS 2 Python Package:
 
 1. Create a ROS 2 Python Package:
-  * Set up a workspace: If you don't have a ROS 2 workspace, create one using `mkdir -p ~/ros2_ws/src && cd ~/ros2_ws`.
-  * Create the package structure: In your workspace's `src` directory,
+
+* Set up a workspace: If you don't have a ROS 2 workspace, create one using `mkdir -p ~/ros2_ws/src && cd ~/ros2_ws`.
+* Create the package structure: In your workspace's `src` directory,
     use `ros2 pkg create <package_name> --build-type ament_python --dependencies rclpy`.
-  * Add your Python modules: Place your custom Python code within a directory that has the same name as your package.
+* Add your Python modules: Place your custom Python code within a directory that has the same name as your package.
     Include an `__init__.py` file within this directory so Python recognizes it as a package.
 
 2. Add Python Libraries to Your Package:
-  * Dependencies in `package.xml`: List any ROS 2 dependencies (e.g., `rclpy`) in your `package.xml` file using the `<depend>` tag.
-  * Using `rosdep`: For faster inclusion of third-party Python packages, check if they have a corresponding `rosdep` key.
+
+* Dependencies in `package.xml`: List any ROS 2 dependencies (e.g., `rclpy`) in your `package.xml` file using the `<depend>` tag.
+* Using `rosdep`: For faster inclusion of third-party Python packages, check if they have a corresponding `rosdep` key.
     Add these keys to your `package.xml`. If a key doesn't exist, you can contribute one.
-  * Package manager installation: Alternatively, you can install Python packages globally `python3 -m pip install -U <package_name>` or
+* Package manager installation: Alternatively, you can install Python packages globally `python3 -m pip install -U <package_name>` or
     locally using pip `python3 -m pip install -U --user <package_name>` or your system's package manager `sudo apt install  <package_name>`.
-  * Declaring dependencies in `setup.py``: Add external Python libraries to the `install_requires` list
+* Declaring dependencies in `setup.py``: Add external Python libraries to the`install_requires` list
     in your `setup.py` file to ensure they are installed when building your package.
     For external Python libraries from PyPI, include them in the `install_requires` list within your `setup.py` file.
     For instance, to use `numpy`, add 'numpy' to the list.
-  * Using a virtual environment: Create a virtual environment within your workspace and activate it.
+* Using a virtual environment: Create a virtual environment within your workspace and activate it.
     Install desired packages within the virtual environment using `python3 -m pip install <package_names>`.
     Make sure to add a `.venv/COLCON_IGNORE` file to prevent `colcon` from trying to build the virtual environment.
 
 3. Develop Python Nodes:
-  * Create a Python node file: Add your Python code to a file within your package's source directory (e.g., `my_python_package/my_node.py`).
-  * Include required libraries: Import `rclpy` and other necessary libraries.
-  * Create a ROS 2 node: Instantiate a ROS 2 node using `rclpy.node.Node()` within your Python script.
-  * Define entry points in `setup.py`: Add a `console_scripts` entry in your `setup.py` file
+
+* Create a Python node file: Add your Python code to a file within your package's source directory (e.g., `my_python_package/my_node.py`).
+* Include required libraries: Import `rclpy` and other necessary libraries.
+* Create a ROS 2 node: Instantiate a ROS 2 node using `rclpy.node.Node()` within your Python script.
+* Define entry points in `setup.py`: Add a `console_scripts` entry in your `setup.py` file
     to make your Python script an executable ROS 2 node. This allows you to run it using `ros2 run`.
 
 4. Build and Run Your Package:
-  * Build the workspace: Navigate to your workspace root and use colcon build to build your package and its dependencies.
-  * Source the setup file: After building, source the workspace's setup file (e.g., source install/local_setup.bash)
+
+* Build the workspace: Navigate to your workspace root and use colcon build to build your package and its dependencies.
+* Source the setup file: After building, source the workspace's setup file (e.g., source install/local_setup.bash)
     in a new terminal to make the installed packages available.
-  * Run the node: Execute your Python node using ros2 run <package_name> <node_name>.
+* Run the node: Execute your Python node using ros2 run <package_name> <node_name>.
 
 5. Important Notes:
-  * Python interpreter compatibility: Ensure your Python interpreter matches the one
+
+* Python interpreter compatibility: Ensure your Python interpreter matches the one
     used to build pre-packaged ROS 2 binaries if you're using them.
-  * Build after changes: Remember to run `colcon build` whenever you make changes to your package,
+* Build after changes: Remember to run `colcon build` whenever you make changes to your package,
     especially after adding new nodes or dependencies.
-  * Source after building: Always source your workspace's setup file in each new terminal session to access the built packages.
-  * Shebang line: Start your Python node files with `#!/usr/bin/env python3` and make them executable using `chmod +x`.
+* Source after building: Always source your workspace's setup file in each new terminal session to access the built packages.
+* Shebang line: Start your Python node files with `#!/usr/bin/env python3` and make them executable using `chmod +x`.
 
 Sources:
+
 * [Using Python Packages with ROS 2](https://docs.ros.org/en/jazzy/How-To-Guides/Using-Python-Packages.html)
 * [ROS2 Part 1 – Create a ROS2 Python Package and Node](https://www.roboticsunveiled.com/ros2-python-package-and-node/)
 * [ROS2 Fundamentals](https://www.roboticsunveiled.com/contents-ros2/#Fundamentals)
@@ -120,6 +131,7 @@ Sources:
 
 
 # `rosdep` Package Manager
+
 When developing your ROS2 Jazzy robot, you can use `rosdep` to manage system dependencies
 and ensure your project has the necessary external libraries and software to build and run correctly.
 By following the steps below, you can effectively use `rosdep` to manage dependencies in your ROS2 Jazzy development environment,
@@ -127,47 +139,58 @@ ensuring a smoother development and build process.
 Here's how you can use `rosdep`:
 
 1. Understand Rosdep and Package Dependencies:
-  * `rosdep` is a command-line tool that handles system dependencies for ROS packages.
-  * Package dependencies are specified in the `package.xml` file within your ROS package.
-  * These dependencies are defined as "rosdep keys" that correspond to specific packages
+
+* `rosdep` is a command-line tool that handles system dependencies for ROS packages.
+* Package dependencies are specified in the `package.xml` file within your ROS package.
+* These dependencies are defined as "rosdep keys" that correspond to specific packages
     or libraries available in system package managers (like apt on Ubuntu/Debian).
 
 2. Install rosdep:
-  * If you installed ROS2 Jazzy through binary packages, `rosdep` is likely included.
-  * Otherwise, you can install it using your system's package manager, for example, on Debian/Ubuntu: `sudo apt install python3-rosdep`.
+
+* If you installed ROS2 Jazzy through binary packages, `rosdep` is likely included.
+* Otherwise, you can install it using your system's package manager, for example, on Debian/Ubuntu: `sudo apt install python3-rosdep`.
 
 3. Initialize and Update rosdep:
-  * If this is the first time using `rosdep`, you need to initialize it and update the local database:
+
+* If this is the first time using `rosdep`, you need to initialize it and update the local database:
+
     ```bash
     sudo rosdep init
     rosdep update
     ```
-  * `rosdep init` may fail if already initialized, which can be safely ignored.
-  * `rosdep update` refreshes the local copy of the `rosdistro` index, which contains information about available ROS packages and their dependencies.
+
+* `rosdep init` may fail if already initialized, which can be safely ignored.
+* `rosdep update` refreshes the local copy of the `rosdistro` index, which contains information about available ROS packages and their dependencies.
 
 4. Install Dependencies for Your Workspace:
-  * Navigate to the root of your ROS2 workspace, where your `src` directory containing package sources is located.
-  * Run `rosdep install` to install dependencies listed in the `package.xml` files within your workspace:
+
+* Navigate to the root of your ROS2 workspace, where your `src` directory containing package sources is located.
+* Run `rosdep install` to install dependencies listed in the `package.xml` files within your workspace:
+
     ```bash
     rosdep install --from-paths src -y --ignore-src --rosdistro jazzy
     ```
-  * `--from-paths src`: Specifies the path to check for `package.xml` files.
-  * `-y`: Automatically answers "yes" to any prompts from the package manager during installation.
-  * `--ignore-src`: Tells rosdep to ignore packages found within the source directory,
+
+* `--from-paths src`: Specifies the path to check for `package.xml` files.
+* `-y`: Automatically answers "yes" to any prompts from the package manager during installation.
+* `--ignore-src`: Tells rosdep to ignore packages found within the source directory,
     assuming they are part of your workspace and don't need external dependencies installed.
-  * `--rosdistro jazzy`: Specifies the ROS distribution to use for dependency resolution.
+* `--rosdistro jazzy`: Specifies the ROS distribution to use for dependency resolution.
 
 5. Adding Rosdep Keys to `package.xml`:
-  * If your package depends on an external library that isn't a ROS package,
+
+* If your package depends on an external library that isn't a ROS package,
     find the corresponding `rosdep` key (e.g., searching in `rosdep/base.yaml` or `rosdep/python.yaml` in the rosdistro repository).
-  * Add this key to your package's `package.xml` file using appropriate tags like `<depend>`, `<build_depend>`, `<exec_depend>`, etc.
+* Add this key to your package's `package.xml` file using appropriate tags like `<depend>`, `<build_depend>`, `<exec_depend>`, etc.
 
 6. Troubleshooting:
-  * If you encounter errors during dependency installation, ensure your `rosdep` is initialized and updated.
-  * Check for conflicting `rosdep` versions or issues with specific libraries
+
+* If you encounter errors during dependency installation, ensure your `rosdep` is initialized and updated.
+* Check for conflicting `rosdep` versions or issues with specific libraries
     (e.g., uninstalling a pip-installed version and installing the apt version).
 
 Sources:
+
 * [Gemini Prompt: How can I use rosdep when developing my ROS2 Jazzy robot?](https://gemini.google.com/)
 
 
@@ -175,6 +198,7 @@ Sources:
 
 
 # Game Controller Not Working
+
 I had a stubborn problem getting the projects working with the Logitech F310 game controller.
 I initial tested it out with the Linux joystick test tool `jstest` and had no problems.
 Once I created my `joy_node` to read data from the F310,
@@ -208,6 +232,7 @@ In effect, this site states you have to do the following:
 NOTE: I made this change but after a period of time (after a reboot?) it changes back to its orginal setting.
 
 ## Required Remediation
+
 The silent failure of this solution is very undesirable.
 An error message should have been printed when the game controller wasn't detected
 and the program stopped.
@@ -217,6 +242,7 @@ and the program stopped.
 
 
 # Mixed use of `apt` and `conda`
+
 Gemini Prompt: _Can the mixed use of apt and conda in ROS2 cause problems?_
 
 Mixing apt and conda without careful consideration can create compatibility problems in ROS2.
@@ -266,6 +292,7 @@ python3 -m pytest src/manual_drive/test/test_safety_monitor.py -v
 
 
 # Manual Execution
+
 I used the code block below to setup my test of the solution.
 Each line was initiated in a separate terminal so I could
 control & observe what was going on.
@@ -321,6 +348,7 @@ ros2 topic echo /test_twist_mux/cmd_vel
 
 
 # Kill a Running Node
+
 To kill a running ROS2 node, do the following:
 
 ```bash
@@ -342,6 +370,7 @@ kill -9 <PID>
 
 
 # Test Configuration - Using Launch System
+
 I could not get this to work.
 As of chapter 5, `ros2 launch ...` has not been covered, and its likely my error.
 
@@ -370,6 +399,7 @@ colcon build
 
 
 # Completely Rebuild your ROS2 Workspace
+
 By following these steps, you will effectively clean out old build artifacts and rebuild your workspace,
 ensuring that your ROS2 Jazzy Python environment is fresh and properly configured.
 

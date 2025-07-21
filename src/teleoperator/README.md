@@ -34,12 +34,14 @@ Create a launch files for all nodes, for the joy nodes, and all nodes except ros
 "ROS2 Jazzy Teleoperator" has been published publicly at this [link](https://claude.ai/public/artifacts/8bf612bc-5236-4157-9637-d78b09ae75f6)
 
 Sources:
+
 * [Controlling a Robot with multiple Inputs using twist_mux](https://robofoundry.medium.com/controlling-a-robot-with-multiple-inputs-using-twist-mux-4535b8ed9559)
 
 ---------------
 
 
 # Kill a Running Node
+
 To kill a running ROS2 node, do the following:
 
 ```bash
@@ -74,6 +76,7 @@ colcon build
 
 
 # Completely Rebuild your ROS2 Workspace
+
 By following these steps, you will effectively clean out old build artifacts and rebuild your workspace,
 ensuring that your ROS2 Jazzy Python environment is fresh and properly configured.
 

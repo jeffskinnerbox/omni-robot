@@ -2,14 +2,17 @@
 # Turtle Gamepad 3 Guide
 
 ## Overview
+
 This guide provides a complete solution for controlling ROS2 turtlesim using a Logitech F310 gamepad controller with Python and ROS2 Jazzy Jalisco. The solution includes emergency stop functionality and comprehensive testing.
 
 ## Required ROS2 Packages
+
 - `ros-jazzy-turtlesim` - Turtle simulation environment
 - `ros-jazzy-joy` - Joystick/gamepad input handling
 - `ros-jazzy-geometry-msgs` - Twist message types for movement commands
 
 ## System Requirements
+
 - Ubuntu 22.04 or compatible Linux distribution
 - ROS2 Jazzy Jalisco installed
 - Logitech F310 gamepad controller
@@ -748,6 +751,7 @@ def generate_launch_description():
 ## Testing
 
 Run the test suite with:
+
 ```bash
 colcon test --packages-select turtle_gamepad_3
 pytest src/turtle_gamepad_3/test/ -v
@@ -756,6 +760,7 @@ pytest src/turtle_gamepad_3/test/ -v
 ## Architecture
 
 The solution consists of three main components:
+
 1. **joy_node**: Publishes gamepad input to `/joy` topic
 2. **turtle_controller**: Translates gamepad input to turtle movement commands
 3. **turtlesim_node**: Simulates the turtle and visualizes movement
