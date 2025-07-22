@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot name="omni-robort-1">
+<robot name="omni-robot-1">
 
   <!-------------- MATERIAL -------------->
 	<material name="gray">
